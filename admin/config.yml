@@ -1,6 +1,6 @@
 backend:
   name: git-gateway
-  branch: daniel/install-netlify # Branch to update (optional; defaults to master)
+  branch: nova-cloud/daniel/install-netlify # Branch to update (optional; defaults to master)
 
 # This line should *not* be indented
 publish_mode: editorial_workflow
