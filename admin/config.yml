@@ -57,10 +57,3 @@ collections:
               default: "about",
             }
           - { label: "Body", name: "body", widget: "markdown" }
-      - label: "Front Page"
-        name: "index"
-        file: "index.html"
-        fields:
-          - { label: "Title", name: "title", widget: "hidden" }
-          - { label: "Layout", name: "layout", widget: "hidden" }
-          - { label: "Body", name: "body", widget: "markdown" }
