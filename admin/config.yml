@@ -1,7 +1,7 @@
 backend:
   name: github
   repo: nova-cloud/nova-cloud.github.io
-  branch: netlify # Branch to update (optional; defaults to master)
+  branch: dev # Branch to update (optional; defaults to master)
   #api_root: https://api.github.com
   #site_domain: nova-cloud.github.io
   #base_url: https://github.com
