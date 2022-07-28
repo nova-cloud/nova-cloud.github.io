@@ -51,4 +51,21 @@ collections:
               widget: "hidden",
               default: "about",
             }
-          - { label: "Body", name: "body", widget: "html" }
+          - { label: "Body", name: "body", widget: "code" }
+      - label: "Front Page"
+        name: "index"
+        file: "index.html"
+        fields:
+          - {
+              label: "Title",
+              name: "title",
+              widget: "hidden",
+              default: "about",
+            }
+          - {
+              label: "Layout",
+              name: "layout",
+              widget: "hidden",
+              default: "about",
+            }
+          - { label: "Body", name: "body", widget: "code" }
