@@ -11,6 +11,6 @@
   new_window: false
   highlight: false
 - name: Contáctenos
-  link: /
+  link: /contact/
   new_window: false
-  highlight: true
+  highlight: false
