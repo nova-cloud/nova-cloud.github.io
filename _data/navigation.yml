@@ -12,5 +12,5 @@
   highlight: false
 - name: Contáctenos
   link: /
-  new_window: true
+  new_window: false
   highlight: true
