@@ -51,4 +51,4 @@ collections:
               widget: "hidden",
               default: "about",
             }
-          - { label: "Body", name: "body", widget: "markdown" }
+          - { label: "Body", name: "body", widget: "html" }
