@@ -1,11 +1,14 @@
 backend:
+  name: git-gateway
   repo: nova-cloud/nova-cloud.github.io
   branch: daniel/install-netlify # Branch to update (optional; defaults to master)
   api_root: https://api.github.com
-  site_domain: nova-cloud.github.io
+  site_domain: https://nova-cloud.github.io
   base_url: https://github.com
   auth_endpoint: auth
   cms_label_prefix: netlify-cms/
+
+local_backend: true
 
 # This line should *not* be indented
 publish_mode: editorial_workflow
