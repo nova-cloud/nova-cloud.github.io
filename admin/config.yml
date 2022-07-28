@@ -56,11 +56,11 @@ collections:
               widget: "hidden",
               default: "about",
             }
-          - { label: "Body", name: "body", widget: "markdown" }
+          - { label: "Body", name: "body", widget: "text" }
       - label: "Front Page"
         name: "index"
         file: "index.html"
         fields:
           - { label: "Title", name: "title", widget: "hidden" }
           - { label: "Layout", name: "layout", widget: "hidden" }
-          - { label: "Body", name: "body", widget: "markdown" }
+          - { label: "Body", name: "body", widget: "text" }
