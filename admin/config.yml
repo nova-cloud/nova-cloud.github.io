@@ -1,5 +1,5 @@
 backend:
-  name: git-gateway
+  name: github
   repo: nova-cloud/nova-cloud.github.io
   branch: daniel/install-netlify # Branch to update (optional; defaults to master)
   api_root: https://api.github.com
