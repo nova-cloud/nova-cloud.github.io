@@ -13,4 +13,4 @@
 - name: Contáctenos
   link: /contact/
   new_window: false
-  highlight: false
+  highlight: true
