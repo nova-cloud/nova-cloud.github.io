@@ -60,7 +60,9 @@ header {
 	padding: 1px 0 0 0;
 	position: relative;
 }
-
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+    display: block;
+}
 .screenshot{
 	max-width: 100%;
 	height: auto;
