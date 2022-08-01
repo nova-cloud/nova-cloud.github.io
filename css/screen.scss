@@ -14,3 +14,71 @@
 @import "navigation";
 @import "footer";
 @import "cloudcannon";
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500");
+
+/*Soluciones en la nube*/
+.flip-card-benefit {
+    background-color: transparent;
+    width: 360px;
+    height: 222px;
+    perspective: 1000px;
+  }
+  
+  .flip-card-inner-benefit {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  
+  .flip-card-benefit:hover .flip-card-inner-benefit {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front-benefit, .flip-card-back-benefit {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front-benefit {
+    background-color: #ffffff;
+       color: #009fc2;
+  }
+  
+  .flip-card-front-benefit h5{
+      display: flex;
+       align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      color: #009fc2;
+      font-size: 36px;
+  }
+  
+  .flip-card-back-benefit {
+    background-color: #009fc2;
+    color: white;
+    transform: rotateY(180deg);    
+    padding: 7px;
+  }
+
+  .list .bg-list1 p{
+    color: white;
+   }
+
+  .flip-card-back-benefit ul{
+      padding-left: 25px;
+      padding-top: 0;
+  }
+
+    .flip-card-back-benefit ul li{
+      color: white;     
+      text-align: left;
+  }
