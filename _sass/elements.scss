@@ -33,6 +33,381 @@ h1 {
 	font-size: 2.3em;
 	margin: 0;
 }
+/*Soluciones en la nube*/
+@-webkit-keyframes animationRight {
+    from {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+    }
+    50% {
+      -webkit-transform: translateX(6px);
+      transform: translateX(6px);
+    }
+    to {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes animationRight {
+    from {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+    }
+    50% {
+      -webkit-transform: translateX(6px);
+      transform: translateX(6px);
+    }
+    to {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+    }
+  }
+
+.flip-card-benefit {
+    background-color: transparent;
+    width: 360px;
+    height: 222px;
+    perspective: 1000px;
+  }
+  
+  .flip-card-inner-benefit {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  
+  .flip-card-benefit:hover .flip-card-inner-benefit {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front-benefit, .flip-card-back-benefit {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front-benefit {
+    background-color: #ffffff;
+       color: #009fc2;
+  }
+  
+  .flip-card-front-benefit h5{
+      display: flex;
+       align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      color: #009fc2;
+      font-size: 36px;
+  }
+  
+  .flip-card-back-benefit {
+    background-color: #009fc2;
+    color: white;
+    transform: rotateY(180deg);    
+    padding: 7px;
+  }
+
+  .list .bg-list1 p{
+    color: white;
+   }
+
+  .flip-card-back-benefit ul{
+      padding-left: 25px;
+      padding-top: 0;
+  }
+
+    .flip-card-back-benefit ul li{
+      color: white;     
+      text-align: left;
+  }
+.supervisor .flip-card-front,
+.Compensation .flip-card-front,
+.Making .flip-card-front,
+.Diversity .flip-card-front,
+.Location .flip-card-front,
+.Promotion .flip-card-front {  
+  background: black;
+}
+
+.nopad{
+  padding: 0;
+}
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.wrapper p {
+  font-size: 30px;
+  font-weight: bold;
+  color: #58595b;
+  margin-bottom: 50px;
+}
+
+.flip-card-mobile {
+  padding: 0;
+  margin: 15px 0;
+}
+
+.flip-card-front-mobile {
+  padding: 0;
+  background-color: #fff;
+  height: 110px;
+}
+
+.flip-card-front-mobile h3 {
+  font-size: 23px;
+  color: #009fc2;
+  margin-top: 29px;
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+.flip-card-front-mobile img {
+  margin-right: 3px;
+  margin-top: 13px;
+}
+
+.flip-card-back-mobile {
+  padding: 0;
+  background-color: #009fc2;
+  height: 100%;
+}
+
+.flip-card-back-mobile p {
+  color: #fff;
+  margin-top: 20px;
+}
+
+.bg-culture {
+  background-color: #171818;
+  padding: 50px 0;
+}
+
+.bg-culture p {
+  color: white;
+}
+
+.tab-pane-mobile .wrapper-mobile p {
+  font-size: 30px;
+  font-weight: bold;
+  color: #58595b;
+  margin-bottom: 50px;
+}
+
+.tab-pane-mobile h2 {
+  color: white;
+  font-size: 24px;
+  text-align: center;
+  font-weight: bold;
+  background-color: #000;
+  padding: 25px;
+}
+
+.tab-pane-mobile:first-child h2::after {
+  content: "\e250";
+  font-family: "Glyphicons Halflings";
+  position: absolute;
+  font-size: 60px;
+  bottom: auto;
+  color: #000;
+  transform: rotate(90deg);
+  left: 0;
+  right: 0;
+  top: 74px;
+}
+
+.tab-pane-mobile h2::after {
+  content: "\e250";
+  font-family: "Glyphicons Halflings";
+  position: absolute;
+  font-size: 60px;
+  bottom: auto;
+  color: #000;
+  transform: rotate(90deg);
+  left: 0;
+  right: 0;
+  top: 76px;
+}
+
+@media (min-width: 768px) {
+  .controls h3 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #58595b;
+  }
+  .tab-pane-mobile h2::after {
+    top: 75px;
+  }
+}
+
+@media (min-width: 992px) {
+  .why-containers .first-p {
+    padding: 15px;
+    margin-bottom: 60px;
+  }
+  .why-discover {
+    margin-top: 30px;
+  }
+  .why-discover h3 {
+    font-size: 33px;
+    text-align: right;
+    color: #fff;
+  }
+  .why-discover .col-md-8 {
+    padding-left: 0;
+  }
+  .list .container-list {
+    padding: 40px 15px;
+  }
+  .list .container-list h5 {
+    font-size: 26px;
+    color: #fff;
+    line-height: 36px;
+  }
+  .list .bg-list1 {
+    background-color: white;
+    padding: 20px 25px;
+    margin-bottom: 20px;
+    height: 669px;
+  }
+  .list .bg-list {
+    background-color: white;
+    padding: 20px 25px;
+    margin-bottom: 20px;
+    /*height: 460px;*/
+  }
+  .flip-card {
+    background-color: transparent;
+    width: auto;
+    height: 222px;
+    perspective: 1000px;
+    margin-bottom: 10px;
+  }
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  .flip-card-front,
+  .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  .flip-card-front {
+    background-color: #fff;
+    color: black;
+  }
+  .flip-card-front h3 {
+    color:  #fff;
+    text-transform: uppercase;
+  }
+  .flip-card-back {
+    background-color: #009fc2;
+    color: white;
+    transform: rotateY(180deg);
+  }
+  /* line 513, ../Premium/DCS Corp. New build/DCS Template/scss/pages/_whydcs.scss */
+  .flip-card-back p {
+    color: white;
+    padding: 10px 10px;
+    text-align: start;
+  }
+  .bg-bluelight {
+    background: linear-gradient(90deg, #009fc2 67%, #fff 50%);
+  }
+  .bg-bluelight img {
+    position: absolute;
+    top: -33px;
+  }
+  .content-flip {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  .content-flip h3 {
+    text-align: left;
+    margin-left: 9px;
+  }
+  .content-flip .span1 {
+    display: in;
+  }
+  .content-flip .span2 {
+    display: block;
+  }
+  .content-flip img {
+    margin-right: 0;
+    margin-left: 207px;
+    position: absolute;
+    top: 78px;
+    display: inline;
+    z-index: 1;
+  }
+  .div-control .controls {
+    margin-bottom: 35px;
+  }
+  .list .bg-list {
+    padding: 20px 25px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .why-discover h3 {
+    font-size: 36px;
+    margin-right: 20px;
+    line-height: 1.2;
+    margin-bottom: 45px;
+  }
+  .bg-bluelight {
+    background: linear-gradient(90deg, #009fc2 61%, #fff 50%);
+  }
+  .flip-card-back {
+    background-color: #009fc2;
+    color: white;
+    transform: rotateY(180deg);
+  }
+  .flip-card-back p {
+    color: white;
+    padding: 24px;
+    text-align: start;
+  }
+  .content-flip {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  .content-flip h3 {
+    text-align: left;
+    margin-left: 53px;
+  }
+  .content-flip img {
+    margin-right: 0;
+    margin-left: 252px;
+  }
+}
+
 
 h2 {
 	font-weight: 300;
