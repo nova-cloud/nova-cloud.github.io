@@ -128,7 +128,7 @@ p, address {
   }
   
   .flip-card-back-benefit {
-    background-color: #009fc2;
+    background-color: #43B4F6;
     color: white;
     transform: rotateY(180deg);    
     padding: 7px;
@@ -153,7 +153,7 @@ p, address {
 .Diversity .flip-card-front,
 .Location .flip-card-front,
 .Promotion .flip-card-front {  
-  background: black;
+  background: #fbfbfb;
 }
 
 .nopad{
@@ -197,7 +197,7 @@ p, address {
 
 .flip-card-back-mobile {
   padding: 0;
-  background-color: #009fc2;
+  background-color: #43B4F6;
   height: 100%;
 }
 
@@ -336,15 +336,15 @@ p, address {
     color: black;
   }
   .flip-card-front h3 {
-    color:  #fff;
+    color: #124D99;
     text-transform: uppercase;
   }
   .flip-card-back {
-    background-color: #009fc2;
+    background-color: #43B4F6;
     color: white;
     transform: rotateY(180deg);
   }
-  /* line 513, ../Premium/DCS Corp. New build/DCS Template/scss/pages/_whydcs.scss */
+
   .flip-card-back p {
     color: white;
     padding: 10px 10px;
@@ -401,7 +401,7 @@ p, address {
     background: linear-gradient(90deg, #009fc2 61%, #fff 50%);
   }
   .flip-card-back {
-    background-color: #009fc2;
+    background-color: #43B4F6;
     color: white;
     transform: rotateY(180deg);
   }
