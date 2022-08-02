@@ -185,6 +185,7 @@ blockquote:before {
 @media (min-width: 768px){
 .container {
     width: 750px;
+	display: grid;
 }
 }
 .container {
@@ -196,11 +197,13 @@ blockquote:before {
 @media (min-width: 992px){
 .container {
     width: 970px;
+	display: grid;
 }
 }
 @media (min-width: 1200px){
 .container {
     width: 1170px;
+	display: grid;
 }
 }
 .row {
