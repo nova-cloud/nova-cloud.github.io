@@ -409,6 +409,10 @@ p, address {
     color: white;
     padding: 24px;
     text-align: start;
+    font-size: 20px;
+  }
+.flip-card-back p.diversity-text {
+    padding-top: 16px;
   }
   .content-flip {
     display: flex;
