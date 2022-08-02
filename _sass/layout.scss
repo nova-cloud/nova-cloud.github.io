@@ -219,6 +219,9 @@ blockquote:before {
 }
 }
 @media (min-width: 992px){
+.col-md-3 {
+    width: 25%;
+}
 .col-md-4 {
     width: 33.33333333%;
 }
