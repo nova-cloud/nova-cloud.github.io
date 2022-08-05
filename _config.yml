@@ -66,9 +66,10 @@ defaults:
     values:
       full_width: true
 
-#jekyll-archives:
-#  enabled:
-#    - categories
+jekyll-archives:
+  enabled:
+    - categories
+  permalink: /:categories/:slug
 
 plugins:
   - jekyll-archives
