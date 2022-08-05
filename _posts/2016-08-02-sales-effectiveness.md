@@ -3,6 +3,7 @@ date: 2020-08-02
 title: Sales effectiveness
 categories:
   - azure
+tags:
   - comenzando
 author_staff_member: gerald
 ---
