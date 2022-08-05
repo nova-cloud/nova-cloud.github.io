@@ -31,7 +31,7 @@ collections:
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
-      - { label: "Layout", name: "layout", widget: "hidden", default: "blog" }
+      - { label: "Layout", name: "layout", widget: "hidden", default: "post" }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "date" }
       - {
@@ -40,7 +40,6 @@ collections:
           widget: "image",
           required: false,
         }
-      #- { label: "Rating (scale of 1-5)", name: "rating", widget: "number" }
       - { label: "Body", name: "body", widget: "markdown" }
 
   - name: "pages"
@@ -49,7 +48,7 @@ collections:
     create: true # Allow users to create new pages
     extension: html
     fields: # The fields for each document, usually in front matter
-          - { label: "Layout", name: "layout", widget: "hidden", default: "blog" }
+          - { label: "Layout", name: "layout", widget: "hidden", default: "page" }
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Body", name: "body", widget: "text" }
 
