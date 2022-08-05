@@ -6,6 +6,7 @@ title: Posts about "Azure"
 
 <div class="card">
   {% for post in site.categories['azure'] %}
+
   {% if post.tags contains 'comenzando'}
   <article class="post">
     <h1>
@@ -21,6 +22,6 @@ title: Posts about "Azure"
       Read More
     </a>
   </article>
-  { % endif %}
+  {% endif %}
   {% endfor %}
 </div>
