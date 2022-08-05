@@ -3,18 +3,22 @@ layout: category
 permalink: /azure/
 title: Posts about "Azure"
 ---
+<h1>Azure</h1>
 
 <div class="card">
   {% for post in site.categories['azure'] %}
 
   {% if post.tags contains "comenzando" %}
+  <h2>Comenzando con Azure</h2>
   <article class="post">
-    <h2>
+    <h3>
       <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-    </h2>
-    <div>
+    </h3>
+    <!--
+      <div>
       <p class="post_date">{{ post.date | date: "%B %e, %Y" }}</p>
     </div>
+  -->
     <div class="entry">
       {{ post.excerpt }}
     </div>
