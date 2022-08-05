@@ -37,6 +37,7 @@ collections:
 
   - name: "pages"
     label: "Pages"
+    create: true # Allow users to create new pages
     editor:
       preview: false
     files:
