@@ -2,7 +2,7 @@
 date: 2020-07-20
 title: The process for direct sales
 categories:
-  - sales
+  - azure
 author_staff_member: anna
 ---
 
