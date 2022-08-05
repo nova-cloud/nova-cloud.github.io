@@ -2,8 +2,8 @@
 date: 2020-08-02
 title: Sales effectiveness
 categories:
-  - sales
-  - tips
+  - azure
+  - comenzando
 author_staff_member: gerald
 ---
 Sales effectiveness refers to the ability of a company’s sales professionals to “win” at each stage of the customer’s buying process, and ultimately earn the business on the right terms and in the right timeframe.

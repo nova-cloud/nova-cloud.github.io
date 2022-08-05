@@ -4,21 +4,65 @@ permalink: /microsoft-365/
 title: Posts about "Microsoft 365"
 ---
 
+<h2>Comenzando con Microsoft 365</h2>
 <div class="card">
   {% for post in site.categories['microsoft-365'] %}
-<article class="post">
-      <h1>
-          <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-      </h1>
-      <div>
-        <p class="post_date">{{ post.date | date: "%B %e, %Y" }}</p>
-      </div>
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">
-          Read More
-      </a>
-    </article>
+
+  {% if post.tags contains 'comenzando'}
+  <article class="post">
+    <h2>
+      <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+    </h2>
+    <div>
+      <p class="post_date">{{ post.date | date: "%B %e, %Y" }}</p>
+    </div>
+    <div class="entry">
+      {{ post.excerpt }}
+    </div>
+    <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">
+      Read More
+    </a>
+  </article>
+  { % endif %}
+  {% endfor %}
+</div>
+
+<h2>Microsoft 365 Intermedio</h2>
+<div class="card">
+  {% for post in site.categories['microsoft-365-intermedio'] %}
+  <article class="post">
+    <h2>
+      <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+    </h2>
+    <div>
+      <p class="post_date">{{ post.date | date: "%B %e, %Y" }}</p>
+    </div>
+    <div class="entry">
+      {{ post.excerpt }}
+    </div>
+    <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">
+      Read More
+    </a>
+  </article>
+  {% endfor %}
+</div>
+
+<h2>Microsoft 365 Avanzado</h2>
+<div class="card">
+  {% for post in site.categories['microsoft-365-avanzado'] %}
+  <article class="post">
+    <h2>
+      <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+    </h2>
+    <div>
+      <p class="post_date">{{ post.date | date: "%B %e, %Y" }}</p>
+    </div>
+    <div class="entry">
+      {{ post.excerpt }}
+    </div>
+    <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">
+      Read More
+    </a>
+  </article>
   {% endfor %}
 </div>
