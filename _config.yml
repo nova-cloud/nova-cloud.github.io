@@ -23,11 +23,11 @@ social:
 # -----
 # Build
 
-timezone: Etc/UTC
+timezone: America/Managua
 
 collections:
   staff_members:
-    _hide_content: true
+    _hide_content: false
 
 paginate: 10
 paginate_path: "/blog/:num/"
@@ -66,9 +66,9 @@ defaults:
     values:
       full_width: true
 
-jekyll-archives:
-  enabled:
-    - categories
+#jekyll-archives:
+#  enabled:
+#    - categories
 
 plugins:
   - jekyll-archives
