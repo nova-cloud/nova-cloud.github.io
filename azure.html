@@ -4,17 +4,17 @@ permalink: /azure/
 title: Posts about "Azure"
 ---
 
-<div class="posts">
+<div class="card">
   {% for post in site.categories['Azure'] %}
     <article class="post">
       <h1>
-          <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+          <a href="{{ site.baseurl }}{{ post.url }}" class="container">{{ post.title }}</a>
       </h1>
       <div>
         <p class="post_date">{{ post.date | date: "%B %e, %Y" }}</p>
       </div>
       <div class="entry">
-        {{ post.excerpt }}
+        {{ post.excerpt | strip_html | truncatewords: 60 }}
       </div>
       <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">
           Read More
@@ -22,3 +22,4 @@ title: Posts about "Azure"
     </article>
   {% endfor %}
 </div>
+
