@@ -3,15 +3,15 @@
   new_window: false
   highlight: false
 - name: Sobre Nosotros
-  link: /about/
+  link: /sobre-nosotros/
   new_window: false
   highlight: false
 - name: Azure
   link: /azure/
   new_window: false
   highlight: false
-- name: Blog
-  link: /blog/
+- name: Microsoft 365
+  link: /microsoft-365/
   new_window: false
   highlight: false
 - name: Contáctenos
