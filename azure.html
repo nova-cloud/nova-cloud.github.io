@@ -8,8 +8,16 @@ title: Posts about "Azure"
 <div class="card">
   {% for post in site.categories['azure'] %}
 
-  {% if post.tags contains "comenzando" %}
+  {% if post.tags contains "primeros-pasos" %}
   <h2>Comenzando con Azure</h2>
+  <div>
+    <p>Deseas conocer lo que Azure puede hacer. Tómate tiempo para conocer beneficios y funciones principales
+    </p>
+  </div>
+  <div>
+    <a href="primeros-pasos/"> Ver artículos</a>
+  </div>
+
   <article class="post">
     <h3>
       <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
