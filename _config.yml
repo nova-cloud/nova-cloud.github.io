@@ -39,7 +39,7 @@ defaults:
       type: "posts"
     values:
       layout: "post"
-      permalink: /:slugified_categories/:name
+      permalink: /:slugified_categories/:title
       _options:
         content:
           width: 1500
