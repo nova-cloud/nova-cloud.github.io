@@ -69,7 +69,7 @@ defaults:
 jekyll-archives:
   enabled:
     - categories
-  permalink: /:categories/:slug
+  # permalinks: /:categories/:slug
 
 plugins:
   - jekyll-archives
