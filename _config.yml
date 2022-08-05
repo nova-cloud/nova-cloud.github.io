@@ -39,10 +39,12 @@ defaults:
       type: "posts"
     values:
       layout: "post"
+      permalink: /:categories/:title:output_ext
       _options:
         content:
           width: 1500
           height: 2500
+          
   - scope:
       path: ""
       type: "staff_members"
