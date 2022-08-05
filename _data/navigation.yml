@@ -2,16 +2,16 @@
   link: /
   new_window: false
   highlight: false
-- name: Sobre Nosotros
-  link: /sobre-nosotros/
-  new_window: false
-  highlight: false
 - name: Azure
   link: /azure/
   new_window: false
   highlight: false
 - name: Microsoft 365
   link: /microsoft-365/
+  new_window: false
+  highlight: false
+- name: Sobre Nosotros
+  link: /sobre-nosotros/
   new_window: false
   highlight: false
 - name: Contáctenos
