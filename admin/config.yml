@@ -40,7 +40,6 @@ collections:
     folder: ""
     create: true # Allow users to create new pages
     extension: html
-    editor:
-      preview: true
+
     
    
