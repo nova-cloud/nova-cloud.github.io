@@ -39,29 +39,8 @@ collections:
     label: "Pages"
     create: true # Allow users to create new pages
     editor:
-      preview: false
-    files:
-      - label: "About Page"
-        name: "about"
-        file: "about.html"
-        fields:
-          - {
-              label: "Title",
-              name: "title",
-              widget: "hidden",
-              default: "about",
-            }
-          - {
-              label: "Layout",
-              name: "layout",
-              widget: "hidden",
-              default: "about",
-            }
-          - { label: "Body", name: "body", widget: "text" }
-      - label: "Front Page"
-        name: "index"
-        file: "index.html"
-        fields:
-          - { label: "Title", name: "title", widget: "hidden" }
-          - { label: "Layout", name: "layout", widget: "hidden" }
-          - { label: "Body", name: "body", widget: "text" }
+    preview: false
+    fields:
+      - { label: "Title", name: "title", widget: "hidden" }
+      - { label: "Layout", name: "layout", widget: "hidden" 
+      - { label: "Body", name: "body", widget: "text" }
