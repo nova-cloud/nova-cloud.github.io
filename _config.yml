@@ -30,7 +30,7 @@ collections:
     _hide_content: false
 
 paginate: 10
-paginate_path: "/noticias/:num/"
+paginate_path: "/blog/:num/"
 permalink: pretty
 
 defaults:
@@ -62,7 +62,7 @@ defaults:
     values:
       layout: "default"
   - scope:
-      path: "contact.html"
+      path: "contacto.html"
     values:
       full_width: true
 
