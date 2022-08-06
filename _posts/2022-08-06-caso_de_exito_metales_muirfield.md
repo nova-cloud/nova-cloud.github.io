@@ -3,6 +3,8 @@ layout: post
 title: "Caso de éxito: Metales Muirfield"
 date: 2022-07-14T02:30:26.108Z
 thumbnail: /images/uploads/caso-de-exito-azure-novacloud.png
+categories:
+  - noticias
 ---
 
 
