@@ -10,8 +10,8 @@
   link: /microsoft-365/
   new_window: false
   highlight: false
-- name: Noticias
-  link: /noticias
+- name: Blog
+  link: /blog
   new_window: false
   highlight: false
 - name: Sobre Nosotros
