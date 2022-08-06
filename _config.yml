@@ -30,7 +30,7 @@ collections:
     _hide_content: false
 
 paginate: 10
-paginate_path: "/blog/:num/"
+paginate_path: "/noticias/:num/"
 permalink: pretty
 
 defaults:
