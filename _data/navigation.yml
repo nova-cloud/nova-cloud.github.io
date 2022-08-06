@@ -10,6 +10,10 @@
   link: /microsoft-365/
   new_window: false
   highlight: false
+- name: Noticias
+  link: /noticias
+  new_window: false
+  highlight: false
 - name: Sobre Nosotros
   link: /sobre-nosotros/
   new_window: false
