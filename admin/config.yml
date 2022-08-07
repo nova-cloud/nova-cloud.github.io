@@ -56,7 +56,9 @@ collections:
     label: "Landing Pages"
     folder: "_landing-pages"
     create: true # Allow users to create new pages
-    extension: html
+    extension: markdown
+    slug: "{{title}}" # Filename template, e.g., YYYY-MM-DD-title.md
+
     fields: # The fields for each document, usually in front matter
       - { label: "Layout", name: "layout", widget: "hidden", default: "page" }
       - { label: "Title", name: "title", widget: "string" }
