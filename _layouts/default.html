@@ -31,12 +31,14 @@
 			<div class="company-name"><a href="{{ site.baseurl }}/"><img
 						src="{{ site.baseurl }}/images/novacloud_logo.png" alt="Nova Cloud Logo" width="221"
 						height="52" /></a></div>
-			{% if post.layout != "landing-page" %}
+			{% if page.layout != "landing-page" %}
 			{% include navigation.html %}
 			{% endif %}
 		</div>
 	</header>
 	{{ content }}
+
+	{% if page.layout != "landing-page" %}
 	<footer>
 		<div class="container">
 			<p class="editor-link"><a href="cloudcannon:collections/_data/footer.yml"
@@ -60,6 +62,7 @@
 					href="#">Privacy</a> • <a href="https://cloudcannon.com/">Template by CloudCannon</a></p>
 		</div>
 	</footer>
+	{% endif %}
 	<script>
 		document.getElementById("open-nav").onclick = function () {
 			document.body.classList.toggle("nav-open");
