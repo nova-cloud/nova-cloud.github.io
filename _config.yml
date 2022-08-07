@@ -23,6 +23,9 @@ social:
 # -----
 # Build
 
+include:
+  - "landing-pages"
+
 timezone: America/Managua
 
 collections:
