@@ -5,13 +5,13 @@ title: Posts about "Microsoft 365"
 ---
 <h1>Microsoft 365</h1>
 
-<div class="card table-helper">
+<div class="card">
     {% for post in site.categories['microsoft-365'] %}
 
     {% if post.tags contains "primeros-pasos" %}
     <h2>Comenzando con Microsoft 365</h2>
 
-    <article class="post">
+    <article class="post table-helper">
         <h3>
             <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
         </h3>
