@@ -24,7 +24,7 @@ social:
 # Build
 
 include:
-  - "landing-pages"
+  - "_landing-pages"
 
 timezone: America/Managua
 
