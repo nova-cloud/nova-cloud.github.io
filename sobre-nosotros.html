@@ -1,0 +1,194 @@
+---
+title: Sobre nosotros
+description: >-
+Brindamos asesorías personalizadas para incorporar los servicios de IT en la nube
+más adecuados para su empresa.
+---
+<h1>
+	Sobre nosotros
+</h1>
+
+<div>
+	<div>
+		<h3>
+			¿Quiénes somos?
+		</h3>
+	</div>
+
+	<div>
+		<p style="margin-top: 5pt; margin-bottom: 5pt; font-family: Calibri; font-size: 11.0pt;" lang="es-TRAD">Somos
+			<strong>Nova Cloud</strong>, una división
+			tecnológica de Cóndor Comunicaciones
+			que ha nacido para ofrecer
+			<strong>soluciones en la
+				nube</strong> dinámicas y
+			pensadas para cubrir las nuevas
+			necesidades de las empresas.
+		</p>
+	</div>
+</div>
+
+
+<div>
+	<div>
+		<h3>
+			Nuestra misión
+		</h3>
+	</div>
+
+	<div>
+		<p style="margin-top: 5pt; margin-bottom: 5pt; font-family: Calibri; font-size: 11.0pt;" lang="es-TRAD">Ofrecer
+			los
+			servicios
+			de IT en la nube más adecuados para
+			su empresa, permitiéndole obtener
+			las herramientas necesarias para que
+			su empresa <strong>mejore la
+				productividad, eficiencia,
+				colaboración, seguridad y
+				reducción de costos.</strong>
+		</p>
+	</div>
+</div>
+
+<div>
+	<div>
+		<h3>
+			¿Qué hacemos?
+		</h3>
+	</div>
+
+	<div>
+		<p style="margin-top: 5pt; margin-bottom: 5pt; font-family: Calibri; font-size: 11.0pt;" lang="es-TRAD">Somos
+
+			Brindamos asesorías personalizadas
+			para incorporar los servicios de IT
+			en la nube más adecuados para su
+			empresa.</p>
+		<p>Le apoyamos en el proceso de
+			implementación y administración de
+			su infraestructura en la nube.</p>
+	</div>
+</div>
+
+
+<div>
+	<h2>
+		¿Por qué trabajar con nosotros?</h2>
+</div>
+
+<div>
+	<div>
+		<h3>
+			Microsoft
+			Silver
+			Partner
+		</h3>
+	</div>
+	<div>
+		<p style="margin-top: 5pt; margin-bottom: 5pt; font-family: Calibri; font-size: 11.0pt;" lang="es-TRAD">Somos
+
+			Experiencia
+			reconocida
+			en
+			implementación
+			de
+			soluciones
+			en la
+			nube.
+		</p>
+	</div>
+
+</div>
+
+<div>
+	<div>
+		<h3>
+			Personal
+			certificado
+		</h3>
+
+	</div>
+
+	<div>
+		<p style="margin-top: 5pt; margin-bottom: 5pt; font-family: Calibri; font-size: 11.0pt;" lang="es-TRAD">Somos
+
+			Personal certificado
+			por Microsoft
+			le garantiza
+			a su empresa
+			implementación
+			adecuada de
+			soluciones en la
+			nube según
+			estándares
+			de
+			Microsoft.
+		</p>
+
+
+	</div>
+
+</div>
+
+
+<div>
+	<h3>
+		Atención
+		personalizada
+
+	</h3>
+	<div>
+		<p style="margin-top: 5pt; margin-bottom: 5pt; font-family: Calibri; font-size: 11.0pt;" lang="es-TRAD">Somos
+
+			Atención
+			personalizada
+			enfocada
+			en su
+			empresa.
+			Comunicación
+			directa
+			con
+			ingenieros
+			en toda
+			la etapa
+			de
+			implementación
+			y
+			servicio.
+		</p>
+	</div>
+
+
+</div>
+
+<div>
+	<h3>
+		¡Contáctenos para una prueba gratis!
+	</h3>
+
+	<p>
+		Descubra con nosotros las herramientas
+		de IT en la nube para transformar su
+		empresa. Su éxito es nuestro objetivo y
+		estamos aquí para ayudarle a lograrlo.
+	</p>
+
+	<a href="/contacto">
+
+		<span class="elementor-button-text">Contáctenos</span>
+	</a>
+</div>
+
+
+<!--<p class="editor-link" style="text-align: center;"><a href="cloudcannon:collections/_staff_members/" class="btn"><strong>&#9998;</strong> Manage Staff members</a></p>-->
+<ul class="staff">
+	{% for person in site.staff_members %}
+	<li>
+		<div class="square-image"><img src="{% include relative-src.html src=person.image_path %}"
+				alt="{{ person.name }}" /></div>
+		<div class="name"><a target="_blank" href="https://twitter.com/{{ person.twitter }}">{{ person.name }}</a></div>
+		<div class="position">{{ person.position }}</div>
+	</li>
+	{% endfor %}
+</ul>

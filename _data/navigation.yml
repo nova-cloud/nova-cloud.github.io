@@ -1,24 +1,24 @@
-- name: Pricing
-  link: /pricing/
+- name: Inicio
+  link: /
   new_window: false
   highlight: false
-- name: Blog
+- name: Azure
+  link: /azure/
+  new_window: false
+  highlight: false
+- name: Microsoft 365
+  link: /microsoft-365/
+  new_window: false
+  highlight: false
+- name: Noticias
   link: /blog/
   new_window: false
   highlight: false
-- name: About
-  link: /about/
+- name: Sobre Nosotros
+  link: /sobre-nosotros/
   new_window: false
   highlight: false
-- name: Contact
-  link: /contact/
+- name: Contáctenos
+  link: /contacto/
   new_window: false
-  highlight: false
-- name: Login
-  link: /
-  new_window: true
-  highlight: false
-- name: Sign Up
-  link: /
-  new_window: true
   highlight: true

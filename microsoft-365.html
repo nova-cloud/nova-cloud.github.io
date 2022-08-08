@@ -1,0 +1,45 @@
+---
+layout: category
+permalink: /microsoft-365/
+title: Posts about "Microsoft 365"
+---
+<h1>Microsoft 365</h1>
+
+<div class="card">
+  {% for post in site.categories['microsoft-365'] %}
+
+
+  {% if post.tags contains "primeros-pasos" %}
+  <h2>Comenzando con Microsoft 365</h2>
+  <div>
+    <p>Deseas conocer lo que Microsoft 365 puede hacer. Tómate tiempo para conocer beneficios y funciones principales
+    </p>
+  </div>
+
+  <div>
+    <a href="primeros-pasos/"> Ver artículos</a>
+
+  </div>
+
+  <article class="post">
+    <h3>
+      <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+    </h3>
+
+    <!--
+      <div>
+        <p class="post_date">{{ post.date | date: "%B %e, %Y" }}</p>
+      </div>
+    -->
+
+    <div class="entry">
+      {{ post.excerpt }}
+    </div>
+    <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">
+      Read More
+    </a>
+  </article>
+  {% endif %}
+
+  {% endfor %}
+</div>

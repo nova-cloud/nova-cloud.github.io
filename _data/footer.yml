@@ -1,13 +1,4 @@
 - links:
-  - name: Pricing
-    link: /pricing/
-  - name: Blog
-    link: /blog/
-  - name: About
-    link: /about/
-  - name: Contact
-    link: /contact/
-- links:
   - name: Login
     link: /
     new_window: true
@@ -21,19 +12,28 @@
     link: /
     new_window: true
 - links:
+  - name: Inicio
+    link: /
+  - name: Sobre Nosotros
+    link: /about/
+  - name: Blog
+    link: /blog/
+  - name: Contáctenos
+    link: /contact/
+- links:
   - name: Facebook
-    link: https://facebook.com/cloudcannon/
+    link: https://www.facebook.com/NovaCloudBusiness
     new_window: true
     social_icon: Facebook
   - name: Twitter
-    link: https://twitter.com/cloudcannon/
+    link: https://www.twitter.com/novacloudb
     social_icon: Twitter
     new_window: true
-  - name: YouTube
-    link: https://youtube.com/cloudcannon/
-    social_icon: YouTube
+  - name: Instagram
+    link: https://www.instagram.com/novacloudb
+    social_icon: Instagram
     new_window: true
-  - name: RSS
-    link: /feed.xml
-    social_icon: RSS
-    new_window: false
+  - name: LinkedIn
+    link: https://www.linkedin.com/company/novacloud-solutions
+    social_icon: LinkedIn
+    new_window: true
