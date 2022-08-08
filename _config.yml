@@ -79,7 +79,7 @@ jekyll-archives:
   # permalinks: /:categories/:slug
 
 plugins:
-  #  - jekyll-archives
+  - jekyll-archives
   - jekyll-sitemap
   - jekyll-seo-tag
   - jekyll-feed
