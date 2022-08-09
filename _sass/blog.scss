@@ -135,3 +135,14 @@
   -webkit-box-shadow: 0px 5px 7px -3px rgba(0,0,0,0.57);
   -moz-box-shadow: 0px 5px 7px -3px rgba(0,0,0,0.57);
 }
+.sobre-nosotros {
+    background-image: url(https://github.com/nova-cloud/nova-cloud.github.io/blob/dev/images/about-us.jpg?raw=true);
+    background-size: cover;
+    height: 500px;
+}
+.sobre-nosotros .cta{
+    margin: 60px auto;
+    position: relative;
+    width: 300px;
+    top: 355px;
+}
