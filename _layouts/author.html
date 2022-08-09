@@ -1,0 +1,32 @@
+---
+layout: default
+---
+<div class="content">
+
+    <h1>{{ page.name }}</h1>
+    <h2>{{ page.position }}</h2>
+
+
+    <ul class="staff">
+
+        <li>
+            <div class="square-image"><img src="{% include relative-src.html src=page.image_path %}"
+                    alt="{{ page.name }}" /></div>
+
+            <div class="name"><a target="_blank" href="https://twitter.com/{{ page.twitter }}">Twitter</a></div>
+            <div class="name"><a target="_blank" href="https://linkedin.com/in/{{ page.linkedin }}">LinkedIn</a></div>
+
+
+        </li>
+
+    </ul>
+
+    {{ content }}
+
+    <h2>Publicaciones</h2>
+    <ul>
+        {% assign filtered_posts = site.posts | where: 'author', page.short_name %}
+        {% for post in filtered_posts %}
+        <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+        {% endfor %}
+    </ul>

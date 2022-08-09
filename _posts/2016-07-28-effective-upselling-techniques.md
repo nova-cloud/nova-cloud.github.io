@@ -1,7 +1,7 @@
 ---
 date: 2020-07-28
 title: Effective upselling techniques
-author_staff_member: betty
+author: daniel
 categories: microsoft-365
 tags: primeros-pasos
 ---

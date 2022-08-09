@@ -64,11 +64,70 @@ empresa.'
 			para incorporar los servicios de IT
 			en la nube más adecuados para su
 			empresa. <br><br>
-		Le apoyamos en el proceso de
+			Le apoyamos en el proceso de
 			implementación y administración de
 			su infraestructura en la nube.</p>
 	</div>
 </div>
+
+
+<div>
+
+	<div>
+		<img src="../images/novacloud_logo_F1_vl_sm.png" title="novacloud_logo_F1_vl_sm" alt="novacloud_logo_F1_vl_sm"
+			width="50">
+	</div>
+
+
+	<div>
+		<img src="../images/logo-condor.png" title="logo-condor" alt="logo-condor" width="50">
+	</div>
+
+</div>
+
+
+<div>
+	<div>
+		<p><span
+				style="font-size: 14px; font-style: normal; font-weight: 500; text-align: center;">Somos&nbsp;</span><span
+				style="font-size: 14px; font-style: normal; font-weight: bold; text-align: center;">Nova
+				Cloud</span><span style="font-size: 14px; font-style: normal; font-weight: 500; text-align: center;">,
+				una
+				división
+				tecnológica de&nbsp;</span><span
+				style="font-size: 14px; font-style: normal; font-weight: bold; text-align: center;">Cóndor
+				Comunicaciones</span></p>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 <div>
@@ -182,12 +241,16 @@ empresa.'
 
 <!--<p class="editor-link" style="text-align: center;"><a href="cloudcannon:collections/_staff_members/" class="btn"><strong>&#9998;</strong> Manage Staff members</a></p>-->
 <ul class="staff">
-	{% for person in site.staff_members %}
+	{% for person in site.authors%}
 	<li>
 		<div class="square-image"><img src="{% include relative-src.html src=person.image_path %}"
 				alt="{{ person.name }}" /></div>
-		<div class="name"><a target="_blank" href="https://twitter.com/{{ person.twitter }}">{{ person.name }}</a></div>
+		<div class="name"><a target="_blank" href="{{ person.url }}">{{ person.name }}</a></div>
 		<div class="position">{{ person.position }}</div>
+		<div class="name"><a target="_blank" href="https://twitter.com/{{ person.twitter }}">Twitter</a></div>
+		<div class="name"><a target="_blank" href="https://linkedin.com/in/{{ person.linkedin }}">linkedIn</a></div>
+
+
 	</li>
 	{% endfor %}
 </ul>
