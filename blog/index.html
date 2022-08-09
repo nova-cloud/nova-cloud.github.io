@@ -1,6 +1,6 @@
 ---
-title: Noticias
-description: Mantente informado de las últimas noticias.
+title: Blog
+description: Mantente informado de las últimas publicaciones..
 ---
 
 <div class="text-container table-helper">
@@ -13,14 +13,16 @@ description: Mantente informado de las últimas noticias.
 	<!-- Pagination links -->
 	<div class="pagination">
 		{% if paginator.previous_page %}
-		<a href="{% include relative-src.html src=paginator.previous_page_path %}" class="previous btn">&larr; Newer
-			posts</a>
+		<a href="{% include relative-src.html src=paginator.previous_page_path %}" class="previous btn">&larr; Nuevos
+			artículos
+		</a>
 		{% endif %}
 
 		<span class="page_number ">{{ paginator.page }} of {{ paginator.total_pages }}</span>
 
 		{% if paginator.next_page %}
-		<a href="{% include relative-src.html src=paginator.next_page_path %}" class="next btn">Older posts &rarr;</a>
+		<a href="{% include relative-src.html src=paginator.next_page_path %}" class="next btn">Viejos
+			artículos&rarr;</a>
 		{% endif %}
 	</div>
 	{% endif %}
