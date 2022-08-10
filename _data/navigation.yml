@@ -6,6 +6,9 @@
   link: /azure/
   new_window: false
   highlight: false
+  submenu:
+    - name: Comenzando con Azure
+      link: /azure/primeros-pasos/
 - name: Microsoft 365
   link: /microsoft-365/
   new_window: false
