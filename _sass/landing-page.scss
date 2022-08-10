@@ -62,3 +62,9 @@
 		flex-direction: row-reverse;
 	}
 }
+.flipcard-cover {
+     width: -webkit-fill-available;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
