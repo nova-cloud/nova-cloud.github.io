@@ -16,15 +16,21 @@
 
 
 	{% comment %}
-	#########
-	# Prueba submenu
-	#########
-	{% endcomment %}
 
+	Prueba submenu
+	---------------------
+
+	{% endcomment %}
 
 	{% for submenu in link.submenu %}
 	{% if link.link == page.url or submenu.link == page.url %}
-	<a href="{{ submenu.link }}">{{ submenu.name }}</a>
+
+	{% if submenu.link == page.url %}
+	{% assign submenuclass = class | append: " active" %}
+	{% endif %}
+
+	<a href="{{ submenu.link }}" class="{{ submenuclass }}">{{ submenu.name }}</a>
+
 	{% endif %}
 	{% endfor %}
 
