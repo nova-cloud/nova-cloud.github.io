@@ -34,12 +34,26 @@ collections:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "date" }
       - {
+          label: "Categories",
+          name: "categories",
+          widget: "select",
+          options: ["", "azure", "microsoft-365", "noticias"],
+          multiple: true,
+        }
+      - {
+          label: "Tags",
+          name: "tags",
+          widget: "select",
+          options: ["primeros-pasos", "intermedio", "avanzado"],
+          multiple: false,
+        }
+      - {
           label: "Featured Image",
           name: "thumbnail",
           widget: "image",
           required: false,
         }
-      - { label: Categories, name: categories, widget: list }
+
       - { label: "Body", name: "body", widget: "markdown" }
 
   - name: "pages"
