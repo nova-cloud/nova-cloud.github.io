@@ -1,7 +1,7 @@
 <nav>
 
 	<div>
-		<ul class="nav-bar">
+		<ul class="nav-bar nav">
 			{% for link in site.data.navigation %}
 			{% assign class = "" %}
 			{% if link.highlight %}
@@ -19,7 +19,7 @@
 
 			{% for submenu in link.submenu %}
 			{% if link.link == page.url or submenu.link == page.url %}
-			<ul class="nav-bar">
+			<ul class="nav-bar nav">
 
 				{% if submenu.link == page.url %}
 				{% assign submenuclass = class | append: " active" %}
