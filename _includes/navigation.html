@@ -16,21 +16,21 @@
 			%}target="_blank" {% endif %}>{{ link.name }}</a>
 
 
-		<div>
-			{% for submenu in link.submenu %}
-			{% if link.link == page.url or submenu.link == page.url %}
+
+		{% for submenu in link.submenu %}
+		{% if link.link == page.url or submenu.link == page.url %}
 
 
-			{% if submenu.link == page.url %}
-			{% assign submenuclass = class | append: " active" %}
-			{% endif %}
+		{% if submenu.link == page.url %}
+		{% assign submenuclass = class | append: " active" %}
+		{% endif %}
 
-			<a href="{{ submenu.link }}" class="{{ submenuclass }}">{{ submenu.name }}</a>
+		<a href="{{ submenu.link }}" class="{{ submenuclass }}">{{ submenu.name }}</a>
 
-			{% endif %}
+		{% endif %}
 
-			{% endfor %}
-		</div>
+		{% endfor %}
+
 
 		{% endfor %}
 
