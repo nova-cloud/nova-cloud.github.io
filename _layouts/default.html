@@ -1,6 +1,6 @@
 <!doctype html>
 
-<html lang="es">
+<html lang="en">
 
 <head>
 	<!-- Bootstrap -->
@@ -30,13 +30,14 @@
 
 <body>
 	<header>
+		{% if page.layout != "landing-page" %}
+		{% include navigation.html %}
+		{% endif %}
 		<div class="container">
 			<div class="company-name"><a href="{{ site.baseurl }}/"><img
 						src="{{ site.baseurl }}/images/novacloud_logo.png" alt="Nova Cloud Logo" width="221"
 						height="52" /></a></div>
-			{% if page.layout != "landing-page" %}
-			{% include navigation.html %}
-			{% endif %}
+
 		</div>
 	</header>
 	{{ content }}
