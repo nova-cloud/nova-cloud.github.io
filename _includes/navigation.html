@@ -1,37 +1,37 @@
 <nav>
 
 	<div>
-		<ul class="nav-bar nav">
-			{% for link in site.data.navigation %}
-			{% assign class = "" %}
-			{% if link.highlight %}
-			{% assign class = class | append: " highlight" %}
-			{% endif %}
-			{% if link.link == page.url %}
-			{% assign class = class | append: " active" %}
-			{% endif %}
 
-			<li class="nav-item">
-				<a href="{% include relative-src.html src=link.link %}" class="{{ class }}" {% if link.new_window
-					%}target="_blank" {% endif %}>{{ link.name }}</a>
-			</li>
+		{% for link in site.data.navigation %}
+		{% assign class = "" %}
+		{% if link.highlight %}
+		{% assign class = class | append: " highlight" %}
+		{% endif %}
+		{% if link.link == page.url %}
+		{% assign class = class | append: " active" %}
+		{% endif %}
 
 
-			{% for submenu in link.submenu %}
-			{% if link.link == page.url or submenu.link == page.url %}
-			<ul class="nav-bar nav">
+		<a href="{% include relative-src.html src=link.link %}" class="{{ class }}" {% if link.new_window
+			%}target="_blank" {% endif %}>{{ link.name }}</a>
 
-				{% if submenu.link == page.url %}
-				{% assign submenuclass = class | append: " active" %}
-				{% endif %}
 
-				<li class="nav-item"><a href="{{ submenu.link }}" class="{{ submenuclass }}">{{ submenu.name }}</a>
-				</li>
-				{% endif %}
 
-				{% endfor %}
-			</ul>
-			{% endfor %}
-		</ul>
+		{% for submenu in link.submenu %}
+		{% if link.link == page.url or submenu.link == page.url %}
+
+
+		{% if submenu.link == page.url %}
+		{% assign submenuclass = class | append: " active" %}
+		{% endif %}
+
+		<a href="{{ submenu.link }}" class="{{ submenuclass }}">{{ submenu.name }}</a>
+
+		{% endif %}
+
+		{% endfor %}
+
+		{% endfor %}
+
 	</div>
 </nav>
