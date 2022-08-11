@@ -1,9 +1,9 @@
 <nav>
 
-	<div class="collapse navbar-collapse" id="navbarNavDropdown">
-		<ul class="navbar-nav">
+	<div>
+		<ul>
 			{% for link in site.data.navigation %}
-			{% assign class = "nav-item" %}
+			{% assign class = "" %}
 			{% if link.highlight %}
 			{% assign class = class | append: " highlight" %}
 			{% endif %}
@@ -11,28 +11,29 @@
 			{% assign class = class | append: " active" %}
 			{% endif %}
 
-			<li class="nav-item">
+			<li>
 				<a href="{% include relative-src.html src=link.link %}" class="{{ class }}" {% if link.new_window
 					%}target="_blank" {% endif %}>{{ link.name }}</a>
 			</li>
 
-		</ul>
 
-		<ul class="navbar-nav">
+
+
 			{% for submenu in link.submenu %}
 			{% if link.link == page.url or submenu.link == page.url %}
+			<ul>
 
+				{% if submenu.link == page.url %}
+				{% assign submenuclass = class | append: " active" %}
+				{% endif %}
 
-			{% if submenu.link == page.url %}
-			{% assign submenuclass = class | append: " active" %}
-			{% endif %}
+				<li><a href="{{ submenu.link }}" class="{{ submenuclass }}">{{ submenu.name }}</a>
+				</li>
+				{% endif %}
 
-			<li><a href="{{ submenu.link }}" class="{{ submenuclass }}">{{ submenu.name }}</a>
-			</li>
-			{% endif %}
-
+				{% endfor %}
+			</ul>
 			{% endfor %}
 		</ul>
-		{% endfor %}
 	</div>
 </nav>
