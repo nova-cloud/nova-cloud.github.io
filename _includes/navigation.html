@@ -1,5 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-	<!--<a class="navbar-brand" href="#">Navbar</a> -->
+<nav class="navbar navbar-expand-lg navbar-light style=" background-color: #e3f2fd;">
 	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
 		aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
 		<span class="navbar-toggler-icon"></span>
@@ -11,12 +10,9 @@
 			{% if link.highlight %}
 			{% assign class = class | append: " highlight" %}
 			{% endif %}
-
-
 			{% if link.link == page.url %}
 			{% assign class = class | append: " active" %}
 			{% endif %}
-
 
 			<li class="nav-item">
 				<a href="{% include relative-src.html src=link.link %}" class="{{ class }}" {% if link.new_window
@@ -38,52 +34,4 @@
 		{% endfor %}
 		{% endfor %}
 	</div>
-</nav>
-
-
-<nav>
-
-	{% for link in site.data.navigation %}
-	{% assign class = "" %}
-	{% if link.highlight %}
-	{% assign class = class | append: " highlight" %}
-	{% endif %}
-
-
-	{% if link.link == page.url %}
-	{% assign class = class | append: " active" %}
-	{% endif %}
-
-
-	<a href="{% include relative-src.html src=link.link %}" class="{{ class }}" {% if link.new_window %}target="_blank"
-		{% endif %}>{{ link.name }}</a>
-
-
-	{% comment %}
-
-	Prueba submenu
-	---------------------
-
-	{% endcomment %}
-
-	{% for submenu in link.submenu %}
-	{% if link.link == page.url or submenu.link == page.url %}
-
-	{% if submenu.link == page.url %}
-	{% assign submenuclass = class | append: " active" %}
-	{% endif %}
-
-	<a href="{{ submenu.link }}" class="{{ submenuclass }}">{{ submenu.name }}</a>
-
-	{% endif %}
-	{% endfor %}
-
-
-
-
-
-	{% endfor %}
-
-
-
 </nav>
