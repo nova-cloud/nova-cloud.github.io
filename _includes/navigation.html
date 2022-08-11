@@ -1,7 +1,7 @@
 <nav>
 
 	<div>
-		<ul>
+		<ul class="nav-bar">
 			{% for link in site.data.navigation %}
 			{% assign class = "" %}
 			{% if link.highlight %}
@@ -11,23 +11,21 @@
 			{% assign class = class | append: " active" %}
 			{% endif %}
 
-			<li>
+			<li class="nav-item">
 				<a href="{% include relative-src.html src=link.link %}" class="{{ class }}" {% if link.new_window
 					%}target="_blank" {% endif %}>{{ link.name }}</a>
 			</li>
 
 
-
-
 			{% for submenu in link.submenu %}
 			{% if link.link == page.url or submenu.link == page.url %}
-			<ul>
+			<ul class="nav-bar">
 
 				{% if submenu.link == page.url %}
 				{% assign submenuclass = class | append: " active" %}
 				{% endif %}
 
-				<li><a href="{{ submenu.link }}" class="{{ submenuclass }}">{{ submenu.name }}</a>
+				<li class="nav-item"><a href="{{ submenu.link }}" class="{{ submenuclass }}">{{ submenu.name }}</a>
 				</li>
 				{% endif %}
 
