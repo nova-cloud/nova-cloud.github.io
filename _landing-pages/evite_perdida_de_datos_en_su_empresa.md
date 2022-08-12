@@ -1,11 +1,12 @@
 ---
 layout: landing-page
 title: Evite pérdida de datos en su empresa
+description: 'Descubra como puede obtener una solución de respaldo y recuperación de datos para su empresa ante ransomware y desastres naturales descargando nuestro eBook completamente gratis.'
 permalink: descarga-gratis-ebook-proteja-su-negocio-de-perdida-de-datos
 thumbnail: /images/uploads/proteja-su-negocio-de-perdida-de-datos-2-200x300.png
 background-image: /images/uploads/fondo-pantalla-lp.png
+
 ---
-Descubra como puede obtener una solución de respaldo y recuperación de datos para su empresa ante ransomware y desastres naturales descargando nuestro eBook completamente gratis.
 
 #### Temas que encontrará en este libro:
 
