@@ -85,4 +85,10 @@ collections:
           widget: "image",
           required: false,
         }
+      - {
+          label: "Background Image",
+          name: "background-image",
+          widget: "image",
+          required: false,
+        }
       - { label: "Body", name: "body", widget: "markdown" }
