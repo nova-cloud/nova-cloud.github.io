@@ -1,9 +1,9 @@
 ---
 layout: default
 ---
-<div class="content">
-    background-image: url("{{ site.baseurl }}/{{ background-image }}"");
 
+<div class="content" style="background-image: url('{{ site.url }}{{ page.background-image }}'); background-repeat: no-repeat; background-attachment: fixed;
+  background-size: cover;">
 
     <section class="page">
         <div class="container {% if page.full_width %}max-container{% endif %}">
