@@ -2,20 +2,20 @@
 layout: default
 ---
 
-<div class="content" style="background-image: url('{{ site.baseurl }}{{ page.background-image }}'); background-repeat: no-repeat; background-attachment: fixed;
+<div class="landing-page-content" style="background-image: url('{{ site.baseurl }}{{ page.background-image }}'); background-repeat: no-repeat; background-attachment: fixed;
   background-size: cover;">
 
 
-    <div class="container landing-page-content {% if page.full_width %}max-container{% endif %}">
+    <div class="container {% if page.full_width %}max-container{% endif %}">
         <div class="row">
 
 
-            <div class="col-lg-4 justify-content-xs-center">
+            <div class="col-lg-3 justify-content-xs-center">
                 <div class="image">
                     <img class="img-thumbnail" src="{{ site.baseurl }}{{ page.thumbnail }}" alt="">
                 </div>
             </div>
-            <div class="col-lg-4 align-self-center">
+            <div class="col-lg-5 align-self-center">
                 {% if page.heading %}
                 <h1>{{ page.heading }}</h1>
 
@@ -53,6 +53,4 @@ layout: default
 
 
     </div>
-</div>
-
 </div>

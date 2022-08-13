@@ -1,8 +1,9 @@
---- --- @import "mixins/flexbox";
+--- 
+--- 
+@import "mixins/flexbox";
 @import "mixins/columns";
 @import "variables";
 @import "elements";
-@import "landing-page";
 @import "layout";
 @import "pricing";
 @import "staff";
@@ -12,5 +13,6 @@
 @import "navigation";
 @import "footer";
 @import "cloudcannon";
+@import "landing-page";
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700");
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500");
