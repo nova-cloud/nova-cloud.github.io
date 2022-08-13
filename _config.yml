@@ -2,8 +2,8 @@
 # Site
 
 title: "Nova Cloud"
-url: "https://proud-alligator.cloudvent.net"
-baseurl: "https://nova-cloud.github.io"
+url: ""
+baseurl: ""
 google_analytics_key:
 google_maps_javascript_api_key:
 disqus_shortname:
