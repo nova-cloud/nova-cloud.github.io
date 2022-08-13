@@ -11,10 +11,21 @@
 }
 
 .landing-page-content {
+  margin-top: 200px;
 
   h1 {
-    font-size: 45px;
+    font-size: 65px;
     line-height: 61px;
+  }
+
+  h2 {
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  h3 {
+    font-size: 25px;
+    line-height: 30px;
   }
 
   h1,
@@ -23,8 +34,11 @@
   h4,
   h5,
   h6 {
-    font-family: $primary-font;
-    color: $dark;
+    font-family: "San Francisco",
+      "Helvetica Neue",
+      "Helvetica",
+      "Arial";
+    color: #000;
     font-weight: 900;
   }
 
@@ -35,7 +49,7 @@
     font-size: 16px;
     letter-spacing: 0;
     line-height: 25px;
-    color: $text-color;
+    color: #666;
     margin-bottom: 0;
   }
 
