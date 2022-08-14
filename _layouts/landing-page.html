@@ -10,12 +10,12 @@ layout: default
         <div class="row">
 
 
-            <div class="col-lg-3 justify-content-xs-center">
+            <div class="col-lg-2 justify-content-xs-left">
                 <div class="image">
                     <img class="img-thumbnail" src="{{ site.baseurl }}{{ page.thumbnail }}" alt="">
                 </div>
             </div>
-            <div class="col-lg-5 align-self-center">
+            <div class="col-lg-8 align-self-left">
                 {% if page.heading %}
                 <h1>{{ page.heading }}</h1>
 
@@ -24,33 +24,34 @@ layout: default
                 {% endif %}
 
                 {% if page.description %}
-                <p>{{ page.description }}</p>
+                <p class="services service-block">{{ page.description }}</p>
                 {% endif %}
             </div>
 
 
 
-            <div class="row">
-                <p class="content">
-                    {{ content }}
 
-                </p>
-            </div>
-
-
-
-            <div class="col-lg-8 align-self-center">
-                <div class="form-group">
-                    {{ page.form }}
-
-
-
+            <div class="row feature">
+                <div class="col-sm-6">
+                    <div class="feature-content">
+                        {{ content }}
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        {{ page.form }}
+                    </div>
                 </div>
             </div>
-
         </div>
 
 
 
+
+
     </div>
+
+
+
+</div>
 </div>

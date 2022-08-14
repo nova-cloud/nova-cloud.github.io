@@ -44,7 +44,7 @@
     font-weight: 900;
   }
 
-  .content p li,
+  .container p li,
   blockquote,
   label {
     color: #fff;
@@ -53,6 +53,7 @@
     line-height: 25px;
     color: #666;
     margin-bottom: 0;
+    padding-top: 45px;
   }
 
 
@@ -327,7 +328,9 @@ a:hover {
 
 iframe {
   background: #fff;
-  border: 1px solid #cccccc;
+  border: 0px solid #cccccc;
+
+
 
 }
 
@@ -1005,6 +1008,7 @@ button:focus,
 
 .services .service-block p {
   margin-bottom: 0;
+  padding-top: 90px;
   font-size: 14px;
   line-height: 20px;
 }
@@ -1065,6 +1069,7 @@ button:focus,
 .feature .feature-content h2,
 .feature .feature-content p {
   margin-bottom: 25px;
+  margin-top: 25px;
 }
 
 @media (max-width: 768px) {
