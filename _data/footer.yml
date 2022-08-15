@@ -1,10 +1,7 @@
-- links:
-  - name: Login
-    link: /
-    new_window: true
-  - name: Sign Up
-    link: /
-    new_window: true
+- logo:
+  - src: /images/novacloud_logo.png
+    alt: Novacloud
+    new_window: false
   - name: Docs
     link: /
     new_window: true
