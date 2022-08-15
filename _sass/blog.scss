@@ -138,7 +138,8 @@
 .sobre-nosotros {
     background-image: url(https://github.com/nova-cloud/nova-cloud.github.io/blob/dev/images/about-us.jpg?raw=true);
     background-size: cover;
-    height: 500px;
+    height: 500px; 
+    background-position: center;
 }
 .sobre-nosotros .cta{
     margin: 60px auto;
