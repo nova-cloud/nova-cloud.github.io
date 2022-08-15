@@ -2,6 +2,7 @@
   - src: /images/novacloud_logo.png
     alt: Novacloud
     new_window: false
+- links:
   - name: Docs
     link: /
     new_window: true
