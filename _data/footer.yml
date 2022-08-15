@@ -15,11 +15,11 @@
   - name: Inicio
     link: /
   - name: Sobre Nosotros
-    link: /about/
+    link: /sobre-nosotros/
   - name: Blog
     link: /blog/
   - name: Contáctenos
-    link: /contact/
+    link: /contacto/
 - links:
   - name: Facebook
     link: https://www.facebook.com/NovaCloudBusiness
