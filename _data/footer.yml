@@ -1,11 +1,4 @@
 - links:
-  - name: Docs
-    link: /
-    new_window: true
-  - name: Status
-    link: /
-    new_window: true
-- links:
   - name: Inicio
     link: /
   - name: Sobre Nosotros
