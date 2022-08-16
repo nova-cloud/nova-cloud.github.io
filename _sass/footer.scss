@@ -70,8 +70,8 @@ footer {
 	padding: 50px 0 50px 0;
 	font-size: 1.1em;
 	position: relative;
-	background: #2b2b40;
-	color: #fff;
+	background: #f5f5f5;
+	color: #000;
 
 	.copyright {
 		font-size: .8em;
@@ -85,7 +85,7 @@ footer {
 	
 	&,
 	a {
-		color: #999;
+		color: #000;
 	}
 
 	h2 {
@@ -104,7 +104,7 @@ footer {
 		text-decoration: none;
 
 		&:hover {
-			color: #fff;
+			color: #000;
 		}
 	}
 
