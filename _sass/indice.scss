@@ -68,3 +68,8 @@ border: 1px solid #0B84D6;
 .first-column, .second-column{
     margin-bottom: 40px;
 }
+.recursos-gratis ul{
+    list-style: none;
+    display: inline-flex;
+    align-items: baseline;
+}
