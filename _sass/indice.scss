@@ -19,6 +19,12 @@ font-weight: 500;
 font-size: 24px;
 line-height: 36px;
 }
+.button a.btn-homepage{
+    float: right;
+}
+.button a.btn-homepage:hover{
+background-color: $white;
+}
 .first-section p.editables{
     color: #000;
     font-weight: 700;
