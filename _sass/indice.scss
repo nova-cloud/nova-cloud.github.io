@@ -40,10 +40,26 @@ background-color: $white;
 .btn-homepage:hover{
     background: #fff;
     color: #0B84D6;
-    border-color: #0B84D6;
+    border: 1px solid #0B84D6;
 }
 .second-section{
     background: #0B84D6;
     color: #fff;
-   padding: 20px 0;
+    padding: 40px 0;
+    font-family: Montserrat;
+}
+.second-section h2{
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 72px;
+}
+.second-section h2{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+}
+.second-section p{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
 }
