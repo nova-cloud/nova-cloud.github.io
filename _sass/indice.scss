@@ -8,11 +8,20 @@ font-weight: 400;
 line-height: 80px;
 margin-bottom: 40px;
 }
+.first-section h2{
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 50px;
+}
 .first-section p{
 color: #0B84D6;
 font-weight: 500;
 font-size: 24px;
 }
+.first-section p.editables{
+    color: #000;
+    font-weight: bold;
+    }
 .servicios-it{
     margin-bottom: 50px;
 }
