@@ -111,16 +111,24 @@
         font-weight: 400;
         line-height: 30px;
     }
-    img{
-        width: 80%;
-        height: auto;
-    }
-    img.editable{
-        width: 53%;
-    }
+    
 }
 .fourth-section{
     background: #f5f5f5;
     padding: 40px 0;
     font-family: Montserrat;
+}
+.fifth-section{
+    img{
+        width: 80%;
+        height: auto;
+    }
+    img.editable{
+        width: 42%;
+        margin: 0 auto;
+        display: block;
+    }
+    p,h4{
+        text-align: center;
+    }
 }
