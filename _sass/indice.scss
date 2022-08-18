@@ -88,12 +88,13 @@
 .recursos-gratis ul{
     list-style: none;
     display: flex;
-    align-items: baseline;
+    align-items: center;
     justify-content: space-evenly;
     background: #f5f5f5;
 
     li p{
         width: 643px;
+        margin-bottom: 0;
     }
 }
 .third-section{
