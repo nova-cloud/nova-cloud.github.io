@@ -33,6 +33,16 @@
         border: 1px solid #0B84D6;
         }
 }
+.button a.btn-blue{
+    color: $brand-color;
+    background-color: $white;
+    border: 1px solid #0B84D6;
+    &:hover{
+        background-color: $brand-color;
+        border: 1px solid #0B84D6;
+        color: $white;
+        }
+}
 
 .servicios-it{
     margin-bottom: 50px;
@@ -77,11 +87,11 @@
 }
 .recursos-gratis ul{
     list-style: none;
-    display: inline-flex;
+    display: flex;
     align-items: baseline;
-    li{
-        padding-left: 70px;
-    }
+    justify-content: space-evenly;
+    background: #f5f5f5;
+
     li p{
         width: 643px;
     }
