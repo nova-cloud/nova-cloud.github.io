@@ -111,9 +111,12 @@
         font-weight: 400;
         line-height: 30px;
     }
-        img{
-        max-width: 80%;
+    img{
+        width: 80%;
         height: auto;
+    }
+    img.editable{
+        width: 53%;
     }
 }
 .fourth-section{
