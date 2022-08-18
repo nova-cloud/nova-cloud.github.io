@@ -1,35 +1,39 @@
 .first-section{
-margin-top: 50px;
-font-family: Montserrat;
+    margin-top: 50px;
+    font-family: Montserrat;
+    h1{
+        font-size: 56px;
+        font-weight: 400;
+        line-height: 80px;
+        margin-bottom: 40px;
+    }
+    h2{
+        font-size: 36px;
+        font-weight: 400;
+        line-height: 50px;
+    }
+    p{
+        color: #0B84D6;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 36px;
+        }
+        p.editables{
+            color: #000;
+            font-weight: 700;
+            }
 }
-.first-section h1{
-font-size: 56px;
-font-weight: 400;
-line-height: 80px;
-margin-bottom: 40px;
-}
-.first-section h2{
-    font-size: 36px;
-    font-weight: 400;
-    line-height: 50px;
-}
-.first-section p{
-color: #0B84D6;
-font-weight: 500;
-font-size: 24px;
-line-height: 36px;
-}
+
+
 .button a.btn-homepage{
     float: right;
+    
+    &:hover{
+        background-color: $white;
+        border: 1px solid #0B84D6;
+        }
 }
-.button a.btn-homepage:hover{
-background-color: $white;
-border: 1px solid #0B84D6;
-}
-.first-section p.editables{
-    color: #000;
-    font-weight: 700;
-    }
+
 .servicios-it{
     margin-bottom: 50px;
 }
@@ -37,34 +41,37 @@ border: 1px solid #0B84D6;
     background: #0B84D6;
     color: #fff;
     border-radius: 6px;
+    
+    &:hover{
+        background: #fff;
+        color: #0B84D6;
+        border: 1px solid #0B84D6;
+    }
 }
-.btn-homepage:hover{
-    background: #fff;
-    color: #0B84D6;
-    border: 1px solid #0B84D6;
-}
+
 .second-section{
     background: #0B84D6;
     color: #fff;
-    padding: 40px 0;
+    padding: 60px 0;
     font-family: Montserrat;
+    h2{
+        font-size: 48px;
+        font-weight: 400;
+        line-height: 72px;
+    }
+    h3{
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 36px;
+    }
+    p{
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 30px;
+        color: rgba(255, 255, 255, 0.8);
+    }
 }
-.second-section h2{
-    font-size: 48px;
-    font-weight: 400;
-    line-height: 72px;
-}
-.second-section h3{
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 36px;
-}
-.second-section p{
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 30px;
-    color: rgba(255, 255, 255, 0.8);
-}
+
 .first-column, .second-column{
     margin-bottom: 40px;
 }
@@ -72,4 +79,10 @@ border: 1px solid #0B84D6;
     list-style: none;
     display: inline-flex;
     align-items: baseline;
+    li{
+        padding-left: 80px;
+    }
+    li p{
+        width: 643px;
+    }
 }
