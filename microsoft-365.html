@@ -24,6 +24,12 @@ title: Posts about "Microsoft 365"
   </div>
 
   <article class="post">
+    {% if post.thumbnail %}
+    <div>
+      <img src="{{ site.baseurl }}{{ post.thumbnail }}">
+    </div>
+    {% endif %}
+
     <h3>
       <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
     </h3>
@@ -35,10 +41,10 @@ title: Posts about "Microsoft 365"
     -->
 
     <div class="entry">
-      {{ post.excerpt }}
+      {{ post.content | strip_html | truncatewords: 50 }}
     </div>
     <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">
-      Read More
+      Leer
     </a>
   </article>
   {% endif %}
