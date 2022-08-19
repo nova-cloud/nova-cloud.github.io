@@ -91,4 +91,10 @@ collections:
           widget: "image",
           required: false,
         }
+      - {
+          label: "Contact Form (iframe)",
+          name: "form",
+          widget: "text",
+          required: false,
+        }
       - { label: "Body", name: "body", widget: "markdown" }
