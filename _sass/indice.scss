@@ -136,7 +136,6 @@
         color: $brand-color;
     }
 }
-
 #myCarousel {
     .carousel-indicators{
         display: block;
@@ -170,6 +169,9 @@
         backface-visibility: hidden;
         -webkit-perspective: 1000px;
         perspective: 1000px;
+    }
+    .carousel-inner>.active{
+        display: block;
     }
     @media (-webkit-transform-3d), (transform-3d)
     {
