@@ -147,17 +147,6 @@
         transform: translateZ(0);
         left: 0;
             
-        li{
-            display: inline-block;
-            width: 10px;
-            height: 10px;
-            margin: 1px;
-            text-indent: -999px;
-            cursor: pointer;
-            background-color: $brand-color;
-            border: 1px solid #fff;
-            border-radius: 10px;
-        }
     }
     .carousel-inner>.carousel-item {
         -webkit-transition: -webkit-transform .6s ease-in-out;
@@ -170,8 +159,9 @@
         -webkit-perspective: 1000px;
         perspective: 1000px;
     }
-    .carousel-inner>.active{
-        display: block;
+
+    .carousel-indicators [data-bs-target] {
+        background-color: $brand-color;
     }
     @media (-webkit-transform-3d), (transform-3d)
     {
