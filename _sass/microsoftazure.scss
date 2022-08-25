@@ -4,7 +4,7 @@
     .first-section{ 
         text-align: center;
         img.logo{
-        width: 35%;
+        width: 45%;
         margin: 0 auto;
          display: block;
          }
@@ -13,9 +13,31 @@
             line-height: 30px;
             color: #596780;
             opacity: 0.6;
+            margin: 40px auto;
+            width: 75%;
+         }
+         h2{
+            font-weight: 700;
          }
     }
-        img.img-pages{
-        border-radius: 10px;
+
+}
+img.img-pages{
+    border-radius: 10px;
+}
+.articulos{
+    p{
+        font-size: 20px;
+        line-height: 30px;
+        color: #596780;
+        opacity: 0.6;
+    }
+    .post{
+        img{
+            height: 280px;
+        }
+        h3 a{
+            color: $black;
+        }
     }
 }
