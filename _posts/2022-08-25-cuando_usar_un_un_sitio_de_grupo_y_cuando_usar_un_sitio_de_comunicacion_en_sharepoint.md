@@ -5,7 +5,7 @@ title: Cuándo usar un un sitio de grupo y cuándo usar un sitio de comunicació
 date: 2022-08-25T13:55:48.693Z
 categories:
   - microsoft-365
-tags: intermedio
+tags: primeros-pasos
 author: daniel
 thumbnail: https://th.bing.com/th/id/R.ccb26c6a7bb11ed49236d33085fcb8fa?rik=VkPkDH%2fMYFu9qA&pid=ImgRaw&r=0
 ---
