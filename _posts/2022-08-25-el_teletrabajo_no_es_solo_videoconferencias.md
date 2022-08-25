@@ -6,6 +6,7 @@ categories:
   - microsoft-365
 tags: primeros-pasos
 author: joanna
+thumbnail: /images/uploads/nova-cloud-microsoft-teams-teletrabajo-1.jpg
 ---
 Las empresas buscan mantener su ritmo de negocio impulsando reuniones eficaces, teniendo además una necesidad de coordinar el trabajo del equipo mientras se trabaja de forma remota.
 
