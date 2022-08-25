@@ -25,6 +25,7 @@
 img.img-pages{
     border-radius: 10px;
 }
+
 .articulos{
     h3{
         color:#F24E1E;
@@ -44,6 +45,12 @@ img.img-pages{
         }
         h3 a{
             color: $black;
+        }
+        p{
+            color: #596780;
+            opacity: 0.6;
+            font-size: 16px;
+            line-height: 24px;
         }
     }
 }
