@@ -5,6 +5,12 @@
 	</span>
 	{% endfor %}
 
+	{% for category in include.post.tags %}
+	<span class="blog-filter">
+		<a href="{{ site.baseurl }}/{{ tag | slugify }}/">{{ tag | capitalize }}</a>
+	</span>
+	{% endfor %}
+
 	<span class="post-date">{{ include.post.date | date: "%B %d, %Y" }}</span>
 
 </p>
