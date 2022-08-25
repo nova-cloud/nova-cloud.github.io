@@ -50,7 +50,7 @@ layout: page
 			<div class="row">
 				<div class="col-xs-12">
 					<h4>Artículos relacionados</h4>
-					<ul>{{ page.category }} {{ page.tag }}
+					<ul>{{ post.category }} {{ post.tag }}
 						{% for post in site.related_posts limit:5 %}
 						{% assign category_match = false %}
 						{% assign tag_match = false %}
