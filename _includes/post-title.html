@@ -7,7 +7,7 @@
 
 	{% for tag in include.post.tags %}
 	<span class="blog-filter">
-		<a href="{{ site.baseurl }}/{{ tag | slugify }}/">{{ tag | capitalize }}</a>
+		<a href="{{ site.baseurl }}/{{ category | slugify }}/{{ tag | slugify }}/">{{ tag | capitalize }}</a>
 	</span>
 	{% endfor %}
 
