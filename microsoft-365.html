@@ -74,3 +74,85 @@ title: Posts about "Microsoft 365"
     </div>
   </div>
 </section>
+<section class="articulos">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+
+        <h3>INTERMEDIO</h3>
+      </div>
+      <div class="col-md-6">
+
+        <h2>Ya conozco sobre Microsoft 365 y quiero saber como iniciar</h2>
+      </div>
+      <div class="col-md-6">
+        <p>Office 365 es algo que se usa en empresas, ya que nos permite poder trabajar en documentos de forma
+          compartida.</p>
+      </div>
+    </div>
+    <div class="row">
+        {% for post in site.categories['microsoft-365'] %}
+        {% if post.tags contains "primeros-pasos" %}
+      <div class="col-md-4">
+        <article class="post">
+          {% if post.thumbnail %}
+          <div><a href="{{ site.baseurl }}{{ post.url }}">
+              <img src="{{ site.baseurl }}{{ post.thumbnail }}">
+            </a>
+          </div>
+          {% endif %}
+
+          <h3> <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a> </h3>
+
+          <div class="entry">
+            {{ post.content | strip_html | truncatewords: 50 }}
+          </div>
+          <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Leer mas</a>
+        </article>
+      </div>
+        {% endif %}
+        {% endfor %}
+    </div>
+  </div>
+</section>
+<section class="articulos">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+
+        <h3>AVANZADO</h3>
+      </div>
+      <div class="col-md-6">
+
+        <h2>Ya utilizamos Azure pero deseo sacarle mas provecho</h2>
+      </div>
+      <div class="col-md-6">
+        <p>Office 365 es algo que se usa en empresas, ya que nos permite poder trabajar en documentos de forma
+          compartida.</p>
+      </div>
+    </div>
+    <div class="row">
+        {% for post in site.categories['microsoft-365'] %}
+        {% if post.tags contains "primeros-pasos" %}
+      <div class="col-md-4">
+        <article class="post">
+          {% if post.thumbnail %}
+          <div><a href="{{ site.baseurl }}{{ post.url }}">
+              <img src="{{ site.baseurl }}{{ post.thumbnail }}">
+            </a>
+          </div>
+          {% endif %}
+
+          <h3> <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a> </h3>
+
+          <div class="entry">
+            {{ post.content | strip_html | truncatewords: 50 }}
+          </div>
+          <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Leer mas</a>
+        </article>
+      </div>
+        {% endif %}
+        {% endfor %}
+    </div>
+  </div>
+</section>
