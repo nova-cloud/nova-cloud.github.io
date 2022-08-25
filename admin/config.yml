@@ -47,6 +47,7 @@ collections:
           options: ["primeros-pasos", "intermedio", "avanzado"],
           multiple: false,
         }
+      - { label: "Author (short name)", name: "author", widget: "string" }
       - {
           label: "Featured Image",
           name: "thumbnail",

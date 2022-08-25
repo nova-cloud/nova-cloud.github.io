@@ -1,6 +1,7 @@
 ---
-title:
+title: 
+date: 
 categories:
-author_staff_member:
-date:
+tags:
+author:
 ---
