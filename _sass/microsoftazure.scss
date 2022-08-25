@@ -45,6 +45,11 @@ img.img-pages{
         }
         h3 a{
             color: $black;
+            font-size: 24px;
+            line-height: 36px;
+        }
+        h3 a:hover{
+            text-decoration: underline;
         }
         p{
             color: #596780;
