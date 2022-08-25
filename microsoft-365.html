@@ -8,8 +8,6 @@ title: Posts about "Microsoft 365"
     <div class="row">
       <div class="col-xs-12 first-section">
         <img src="{{ site.baseurl }}/images/microsoft365-logo.png" alt="Microsoft 365 logo" class="logo" />
-        {% for post in site.categories['microsoft-365'] %}
-        {% if post.tags contains "primeros-pasos" %}
         <h2>Comenzando con Microsoft 365</h2>
         <p>Deseas conocer lo que Microsoft 365 puede hacer. Tómate tiempo para conocer beneficios y funciones
           principales</p>
@@ -34,11 +32,13 @@ title: Posts about "Microsoft 365"
     </div>
   </div>
 </section>
-
+        {% for post in site.categories['microsoft-365'] %}
+        {% if post.tags contains "primeros-pasos" %}
 <section class="articulos">
   <div class="container">
     <div class="row">
       <div class="col-xs-12">
+        
         <h3>BASICO</h3>
       </div>
       <div class="col-md-6">
