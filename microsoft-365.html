@@ -37,8 +37,7 @@ title: Posts about "Microsoft 365"
   <div class="container">
     <div class="row">
       <div class="col-xs-12">
-        {% for post in site.categories['microsoft-365'] %}
-        {% if post.tags contains "primeros-pasos" %}
+
         <h3>BASICO</h3>
       </div>
       <div class="col-md-6">
@@ -51,7 +50,9 @@ title: Posts about "Microsoft 365"
       </div>
     </div>
     <div class="row">
-      <div class="col-xs-12">
+        {% for post in site.categories['microsoft-365'] %}
+        {% if post.tags contains "primeros-pasos" %}
+      <div class="col-md-4">
         <article class="post">
           {% if post.thumbnail %}
           <div><a href="{{ site.baseurl }}{{ post.url }}">
@@ -67,9 +68,9 @@ title: Posts about "Microsoft 365"
           </div>
           <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Leer mas</a>
         </article>
+      </div>
         {% endif %}
         {% endfor %}
-      </div>
     </div>
   </div>
 </section>
