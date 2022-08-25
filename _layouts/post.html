@@ -50,7 +50,7 @@ layout: page
 			<div class="row">
 				<div class="col-xs-12">
 					<h4>Artículos relacionados</h4>
-					<ul>
+					<ul>{{ page.category }} {{ page.tag }}
 						{% for post in site.related_posts limit:5 %}
 						{% assign category_match = false %}
 						{% assign tag_match = false %}
@@ -68,7 +68,7 @@ layout: page
 
 
 
-						{% if category_match and tag_match %}
+						{% if category_match && tag_match %}
 						<li>
 							<a href="{{ post.url }}">{{ post.title }} - {{ page.category }} {{ page.tag }}</a>
 						</li>
