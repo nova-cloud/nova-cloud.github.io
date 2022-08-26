@@ -14,7 +14,6 @@
 		{% endif %}>{{ link.name }}</a>
 
 
-	{% comment %}
 	{% for submenu in link.submenu %}
 	{% if link.link == page.url or submenu.link == page.url %}
 
@@ -28,7 +27,7 @@
 	{% endif %}
 
 	{% endfor %}
-	{% endcomment %}
+
 
 	{% endfor %}
 
