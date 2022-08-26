@@ -50,8 +50,8 @@ title: Posts about "Microsoft 365"
       </div>
     </div>
     <div class="row">
-        {% for post in site.categories['microsoft-365'] %}
-        {% if post.tags contains "primeros-pasos" %}
+      {% for post in site.categories['microsoft-365'] %}
+      {% if post.tags contains "primeros-pasos" %}
       <div class="col-md-4">
         <article class="post">
           {% if post.thumbnail %}
@@ -63,14 +63,18 @@ title: Posts about "Microsoft 365"
 
           <h3> <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a> </h3>
 
+          {% comment %}
+          <!-- No mostrar snippet, solo imagen-->
           <p>
-            {{ post.content | strip_html | truncatewords: 50 }}
+            {{ post.content | strip_html | truncatewords: 25 }}
           </p>
+          {% endcomment %}
+
           <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Leer mas</a>
         </article>
       </div>
-        {% endif %}
-        {% endfor %}
+      {% endif %}
+      {% endfor %}
     </div>
   </div>
 </section>
@@ -91,8 +95,8 @@ title: Posts about "Microsoft 365"
       </div>
     </div>
     <div class="row">
-        {% for post in site.categories['microsoft-365'] %}
-        {% if post.tags contains "primeros-pasos" %}
+      {% for post in site.categories['microsoft-365'] %}
+      {% if post.tags contains "primeros-pasos" %}
       <div class="col-md-4">
         <article class="post">
           {% if post.thumbnail %}
@@ -110,8 +114,8 @@ title: Posts about "Microsoft 365"
           <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Leer mas</a>
         </article>
       </div>
-        {% endif %}
-        {% endfor %}
+      {% endif %}
+      {% endfor %}
     </div>
   </div>
 </section>
@@ -132,8 +136,8 @@ title: Posts about "Microsoft 365"
       </div>
     </div>
     <div class="row">
-        {% for post in site.categories['microsoft-365'] %}
-        {% if post.tags contains "primeros-pasos" %}
+      {% for post in site.categories['microsoft-365'] %}
+      {% if post.tags contains "primeros-pasos" %}
       <div class="col-md-4">
         <article class="post">
           {% if post.thumbnail %}
@@ -151,8 +155,8 @@ title: Posts about "Microsoft 365"
           <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Leer mas</a>
         </article>
       </div>
-        {% endif %}
-        {% endfor %}
+      {% endif %}
+      {% endfor %}
     </div>
   </div>
 </section>
