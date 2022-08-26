@@ -1,9 +1,10 @@
 <p class="post-details">
 
 	<span class="blog-filter">
+		Está aquí:
 		{% for category in include.post.categories %}
 		<a href="{{ site.baseurl }}/{{ category | slugify }}/">{{ category | capitalize }}</a>
-		/ 
+		/
 		{% for tag in include.post.tags %}
 		<a href="{{ site.baseurl }}/{{ category | slugify }}/{{ tag | slugify }}/">{{ tag | capitalize }}</a>
 	</span>
