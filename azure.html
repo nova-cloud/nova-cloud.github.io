@@ -5,37 +5,166 @@ title: Posts about "Azure"
 ---
 
 
-<div class="card">
-  <h1>Azure</h1>
-  {% for post in site.categories['azure'] %}
-
-  {% if post.tags contains "primeros-pasos" %}
-  <h2>Comenzando con Azure</h2>
-  <img src="{{ site.baseurl }}/images/microsoft-azure.jpg" alt="Screenshot" class="screenshot editable" />
-  <div>
-    <p>Deseas conocer lo que Azure puede hacer. Tómate tiempo para conocer beneficios y funciones principales
-    </p>
-  </div>
-  <div>
-    <a href="primeros-pasos/"> Ver artículos</a>
-  </div>
-
-  <article class="post">
-    <h3>
-      <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-    </h3>
-    <!--
-      <div>
-      <p class="post_date">{{ post.date | date: "%B %e, %Y" }}</p>
+<section class="microsoft365">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 first-section">
+          <img src="{{ site.baseurl }}/images/azure-logo.png" alt="Azure logo" class="logo" />
+          <h2>Comenzando con Azure</h2>
+          <p>Deseas conocer lo que Azure puede hacer. Tómate tiempo para conocer beneficios y funciones
+            principales</p>
+        </div>
+  
+        <div class="col-md-6">
+          <ul>
+            <li>
+              <h4>Versiones de Azure</h4>
+              <p>En la actualidad tenemos varias versiones para hogar y otras para empresas. De forma que en función de las necesidades se puede elegir la que más 
+                conviene.</p>
+            </li>
+            <li>
+              <h4>Ventajas de Azure</h4>
+              <p>Azure es una evolución natural de la clásica Microsoft Office. La suite ofimática por excelencia, que sigue existiendo en la actualidad, se ha 
+                actualizado y adaptado para clientes empresariales y también hogares.</p>
+            </li>
+            <li>
+              <h4>Caracteristicas adicionales</h4>
+              <p>Cada una de las opciones nos ofrece unas características adicionales, por lo que en función de las necesidades y el uso que le vayamos a dar, hay una 
+                opción que nos conviene más.</p>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+            <img src="{{ site.baseurl }}/images/microsoft-azure.png" alt="Azure image" class="img-pages" />
+        </div>
+      </div>
     </div>
-  -->
-    <div class="entry">
-      {{ post.excerpt }}
+  </section>
+  
+  <section class="articulos">
+    <div class="container">
+      <div class="row introduccion">
+        <div class="col-xs-12">
+  
+          <h3>BASICO</h3>
+        </div>
+        <div class="col-md-6">
+  
+          <h2>Primeros pasos con Azure</h2>
+        </div>
+        <div class="col-md-6">
+          <p>Azure es algo que se usa en empresas, ya que nos permite poder trabajar en documentos de forma
+            compartida.</p>
+        </div>
+      </div>
+      <div class="row">
+        {% for post in site.categories['azure'] %}
+        {% if post.tags contains "primeros-pasos" %}
+        <div class="col-md-4">
+          <article class="post">
+            {% if post.thumbnail %}
+            <div><a href="{{ site.baseurl }}{{ post.url }}">
+                <img src="{{ site.baseurl }}{{ post.thumbnail }}" class="img-pages">
+              </a>
+            </div>
+            {% endif %}
+  
+            <h3> <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a> </h3>
+  
+  
+            <!-- No mostrar snippet, solo imagen-->
+            <p>
+              {{ post.content | strip_html | truncatewords: 15 }}
+            </p>
+  
+  
+            <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Leer</a>
+          </article>
+        </div>
+        {% endif %}
+        {% endfor %}
+      </div>
     </div>
-    <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">
-      Read More
-    </a>
-  </article>
-  {% endif %}
-  {% endfor %}
-</div>
+  </section>
+  <section class="articulos">
+    <div class="container">
+      <div class="row introduccion">
+        <div class="col-xs-12">
+  
+          <h3>INTERMEDIO</h3>
+        </div>
+        <div class="col-md-6">
+  
+          <h2>Ya conozco sobre Azure y quiero saber como iniciar</h2>
+        </div>
+        <div class="col-md-6">
+          <p>Azure es algo que se usa en empresas, ya que nos permite poder trabajar en documentos de forma
+            compartida.</p>
+        </div>
+      </div>
+      <div class="row">
+        {% for post in site.categories['azure'] %}
+        {% if post.tags contains "primeros-pasos" %}
+        <div class="col-md-4">
+          <article class="post">
+            {% if post.thumbnail %}
+            <div><a href="{{ site.baseurl }}{{ post.url }}">
+                <img src="{{ site.baseurl }}{{ post.thumbnail }}" class="img-pages">
+              </a>
+            </div>
+            {% endif %}
+  
+            <h3> <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a> </h3>
+  
+            <p>
+              {{ post.content | strip_html | truncatewords: 50 }}
+            </p>
+            <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Leer mas</a>
+          </article>
+        </div>
+        {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+  <section class="articulos">
+    <div class="container">
+      <div class="row introduccion">
+        <div class="col-xs-12">
+  
+          <h3>AVANZADO</h3>
+        </div>
+        <div class="col-md-6">
+  
+          <h2>Ya utilizamos Azure pero deseo sacarle mas provecho</h2>
+        </div>
+        <div class="col-md-6">
+          <p>Office 365 es algo que se usa en empresas, ya que nos permite poder trabajar en documentos de forma
+            compartida.</p>
+        </div>
+      </div>
+      <div class="row">
+        {% for post in site.categories['azure'] %}
+        {% if post.tags contains "primeros-pasos" %}
+        <div class="col-md-4">
+          <article class="post">
+            {% if post.thumbnail %}
+            <div><a href="{{ site.baseurl }}{{ post.url }}">
+                <img src="{{ site.baseurl }}{{ post.thumbnail }}" class="img-pages">
+              </a>
+            </div>
+            {% endif %}
+  
+            <h3> <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a> </h3>
+  
+            <p>
+              {{ post.content | strip_html | truncatewords: 50 }}
+            </p>
+            <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Leer mas</a>
+          </article>
+        </div>
+        {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  </section>
