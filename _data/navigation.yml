@@ -13,6 +13,10 @@
   link: /microsoft-365/
   new_window: false
   highlight: false
+  submenu:
+    - name: Comenzando con Microsoft 365
+      link: /microsoft-365/primeros-pasos/
+      highlight: true
 - name: Blog
   link: /blog/
   new_window: false
