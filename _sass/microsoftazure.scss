@@ -1,68 +1,67 @@
-.microsoft365 {
+.microsoft365{
     padding: 0;
     margin-bottom: 60px;
-
-    .first-section {
+    .first-section{ 
         text-align: center;
-
-        img.logo {
-            width: 35%;
-            margin: 0 auto;
-            display: block;
-        }
-
-        p {
+        img.logo{
+        width: 35%;
+        margin: 0 auto;
+         display: block;
+         }
+         p{
             font-size: 20px;
             line-height: 30px;
             color: #596780;
             opacity: 0.6;
             margin: 40px auto;
             width: 75%;
-        }
-
-        h2 {
+         }
+         h2{
             font-weight: 700;
+         }
+    }
+    @media screen and (min-width: 786px) {
+        ul{
+            margin-left: 65px;
         }
     }
 
 }
-
-img.img-pages {
+img.img-pages{
     border-radius: 10px;
 }
-
-.articulos {
-    h3 {
-        color: #F24E1E;
+.articulos{
+    @media screen and (min-width: 786px) {
+    .row:first-child{
+        margin-bottom: 40px;
+    }
+    }
+    h3{
+        color:#F24E1E;
         font-weight: 600;
         font-size: 20px;
         line-height: 30px;
     }
-
-    p {
+    p{
         font-size: 20px;
         line-height: 30px;
         color: #596780;
         opacity: 0.6;
     }
-
-    .post {
-        img {
+    .post{
+        img{
             height: 280px;
-            object-fit: cover;
+            object-fit:cover;
         }
-
-        h3 a {
+        h3 a{
             color: $black;
             font-size: 24px;
             line-height: 36px;
         }
-
-        h3 a:hover {
+        h3 a:hover{
             text-decoration: underline;
         }
-
-        p {
+        p{
             color: #596780;
             opacity: 0.6;
             font-size: 16px;
