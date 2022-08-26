@@ -8,7 +8,7 @@
 	{% if link.link == page.url %}
 	{% assign class = class | append: " active" %}
 	{% endif %}
-	{% if link.link contains page.category %}
+	{% if link.link contains page.categories %}
 	{% assign class = class | append: " active" %}
 	{% endif %}
 
