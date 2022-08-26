@@ -5,7 +5,6 @@ layout: default
 <div class="container {% if page.full_width %}max-container{% endif %}">
     <div class="row">
         <div class="col">
-            {% include breadcrumbs.html %}
             {% if page.heading %}
             <h2>{{ page.heading }}</h2>
             {% elsif page.title and page.layout != 'archive' %}
