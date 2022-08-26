@@ -60,18 +60,16 @@
 
 	.post-details {
 		border-bottom: 1px solid #eee;
-		font-size: 2em;
-
+		font-size: .9em;
 
 		.blog-filter {
 			display: inline-block;
 			text-align: left;
 
-
 			a {
 				position: relative;
-				top: 5px;
-				//font-size: 2em;
+				top: -5px;
+				font-size: 2em;
 			}
 		}
 
