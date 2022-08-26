@@ -8,12 +8,16 @@
 	{% if link.link == page.url %}
 	{% assign class = class | append: " active" %}
 	{% endif %}
+	{% if link.link contains page.category %}
+	{% assign class = class | append: " active" %}
+	{% endif %}
 
 
 	<a href="{% include relative-src.html src=link.link %}" class="{{ class }}" {% if link.new_window %}target="_blank"
 		{% endif %}>{{ link.name }}</a>
 
 
+	{% comment %}
 	{% for submenu in link.submenu %}
 	{% if link.link == page.url or submenu.link == page.url %}
 
@@ -27,7 +31,7 @@
 	{% endif %}
 
 	{% endfor %}
-
+	{% endcomment %}
 
 	{% endfor %}
 
