@@ -1,16 +1,23 @@
-<p class="post-details">
+<div class="post-details">
+
 
 	<span class="blog-filter">
 
 		{% for category in include.post.categories %}
 		<a href="{{ site.baseurl }}/{{ category | slugify }}/">{{ category | capitalize }}</a>
-		-
+
 		{% for tag in include.post.tags %}
 		<a href="{{ site.baseurl }}/{{ category | slugify }}/{{ tag | slugify }}/">{{ tag | capitalize }}</a>
 	</span>
 	{% endfor %}
 	{% endfor %}
+	<h1 class="blog-page-title">{{ page.title }}</h1>
+	<span class="post-date">{{ include.post.date | date: "%d de %B, %Y" }} •
+		{% if read_time != '0' %}
+		{{ read_time }}
+		{% else %}
+		1
+		{% endif %} minutos de lectura
+	</span>
 
-	<span class="post-date">{{ include.post.date | date: "%B %d, %Y" }}</span>
-
-</p>
+</div>

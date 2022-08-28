@@ -23,10 +23,21 @@
 		.blurb {
 			text-align: center;
 		}
+
+
+	}
+
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		padding-top: 2em;
 	}
 
 	h3 {
 		margin: 0;
+
 
 		a {
 			color: #000;
@@ -38,6 +49,16 @@
 
 	h2 {
 		text-align: left;
+	}
+
+	.post-snippet {
+		font-family: 'Roboto';
+		font-style: normal;
+		font-weight: 500;
+		font-size: 26px;
+		line-height: 160%;
+		color: #434343;
+		margin: 1em;
 	}
 
 	.blog-navigation {
@@ -59,17 +80,26 @@
 	}
 
 	.post-details {
-		border-bottom: 1px solid #eee;
-		font-size: .9em;
 
 		.blog-filter {
-			display: inline-block;
-			text-align: left;
+			margin-bottom: 30px;
 
 			a {
-				position: relative;
-				top: -5px;
-				font-size: .9em;
+				background: #283A61;
+				border-radius: 3px;
+
+				display: inline-block;
+				text-align: left;
+				font-family: 'Roboto';
+				font-style: normal;
+				font-weight: 500;
+				font-size: 18px;
+				line-height: 16px;
+				padding: .3em;
+				margin-bottom: .5em;
+
+
+				color: rgba(255, 255, 255, 0.85);
 			}
 		}
 
@@ -78,7 +108,16 @@
 		}
 
 		.post-date {
-			float: right;
+			float: left;
+			font-family: 'Merriweather';
+			font-style: normal;
+			font-weight: 400;
+			font-size: 16px;
+			line-height: 160%;
+			margin-bottom: 30px;
+
+
+			color: #515151;
 		}
 
 		&:after {
@@ -92,6 +131,7 @@
 		.button {
 			margin: 30px 0 0 0;
 		}
+
 	}
 }
 
@@ -160,4 +200,82 @@
 	border: none;
 	padding-top: 100px;
 	padding-bottom: 50px;
+}
+
+.toc {
+
+	box-sizing: border-box;
+	background: #F5F5F5;
+	border: 1px solid #DDDDDD;
+	border-radius: 7px;
+	padding: 2em;
+
+	p {
+
+		font-family: 'Merriweather';
+		font-style: normal;
+		font-weight: 700;
+		font-size: 24px;
+		line-height: 160%;
+
+
+		color: #000000;
+	}
+
+
+	.section-nav {
+
+
+		font-family: 'Merriweather';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 160%;
+
+		li a {
+			color: #000000;
+			text-decoration-line: underline;
+			font-size: 18px;
+		}
+	}
+}
+
+.blog-page-title {
+
+	text-align: left;
+	font-family: 'Merriweather';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 46px;
+	line-height: 58px;
+
+	color: #000000;
+}
+
+.post-author {
+	display: inline-flex;
+	margin-top: -1.5em;
+
+	p a {
+		font-family: 'Merriweather';
+		font-style: normal;
+		font-weight: 700;
+		font-size: 16px;
+		line-height: 5em;
+		color: #000000;
+		padding-top: 1em;
+		margin-left: 1em;
+
+	}
+
+
+	img {
+
+		width: 75px;
+		height: 75px;
+
+		border-radius: 50%;
+
+
+	}
 }

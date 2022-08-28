@@ -54,6 +54,7 @@ collections:
           widget: "image",
           required: true,
         }
+      - { label: "Snippet", name: "snippet", widget: "string" }
 
       - { label: "Body", name: "body", widget: "markdown" }
 

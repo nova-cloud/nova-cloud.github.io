@@ -7,8 +7,8 @@ categories:
 tags: primeros-pasos
 author: joanna
 thumbnail: /images/uploads/nova-cloud-microsoft-teams-teletrabajo-1.jpg
+snippet: Las empresas buscan mantener su ritmo de negocio impulsando reuniones eficaces, teniendo además una necesidad de coordinar el trabajo del equipo mientras se trabaja de forma remota.
 ---
-Las empresas buscan mantener su ritmo de negocio impulsando reuniones eficaces, teniendo además una necesidad de coordinar el trabajo del equipo mientras se trabaja de forma remota.
 
 ### ¿Cómo desarrollo un efectivo teletrabajo en la empresa?
 
