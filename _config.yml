@@ -97,6 +97,7 @@ exclude:
 
 # -----------
 # TOC
+# https://github.com/toshimaru/jekyll-toc
 toc:
   min_level: 1
   max_level: 6
