@@ -15,6 +15,9 @@ layout: page
 
 				{% include post-title.html post=page %}
 			</div>
+			<div id="table-of-contents">
+				{% toc %}
+			</div>
 			<div class="col-xs-12">
 				<p class="editor-link"><a href="cloudcannon:collections/{{ page.path }}"
 						class="btn"><strong>&#9998;</strong> Edit Post</a></p>
@@ -25,7 +28,8 @@ layout: page
 					</div>
 					{% endif %}
 
-					{{ content }}
+					{{ content | inject_anchors }}
+
 
 				</div>
 				<div class="col-xs-12">

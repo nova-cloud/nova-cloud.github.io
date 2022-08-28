@@ -41,6 +41,7 @@ defaults:
       path: ""
       type: "posts"
     values:
+      toc: true
       layout: "post"
       permalink: /:categories/:slug
       _options:
@@ -86,12 +87,26 @@ plugins:
   - jekyll-seo-tag
   - jekyll-feed
   - jekyll-paginate
+  - jekyll-toc
 
 exclude:
   - Gemfile
   - Gemfile.lock
   - README.md
   - LICENCE
+
+# -----------
+# TOC
+toc:
+  min_level: 1
+  max_level: 6
+  ordered_list: false
+  no_toc_section_class: no_toc_section
+  list_id: toc
+  list_class: section-nav
+  sublist_class: ""
+  item_class: toc-entry
+  item_prefix: toc-
 
 # -----------
 # CloudCannon
