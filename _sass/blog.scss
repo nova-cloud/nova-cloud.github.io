@@ -7,6 +7,31 @@
 	}
 }
 
+.list-group {
+
+	h5 {
+		font-family: 'Roboto';
+		font-style: normal;
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 160%;
+
+		text-align: left;
+
+		color: #000000;
+	}
+}
+
+.list-group-item {
+	font-family: 'Merriweather';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 160%;
+	border: 0px;
+	color: #000000;
+}
+
 .blog-post {
 	.author {
 		padding: 30px 0 0 0;
@@ -33,6 +58,12 @@
 	h5,
 	h6 {
 		padding-top: 2em;
+		font-family: 'Merriweather';
+		font-style: normal;
+		font-weight: 700;
+		font-size: 24px;
+		line-height: 160%;
+		color: #303030;
 	}
 
 	h3 {
@@ -49,6 +80,46 @@
 
 	h2 {
 		text-align: left;
+	}
+
+	.related-posts {
+
+		p {
+			font-family: 'Roboto';
+			font-style: normal;
+			font-weight: 400;
+			font-size: 18px;
+			line-height: 160%;
+			color: #4F4F4F;
+
+		}
+
+		a {
+			font-family: 'Merriweather';
+			font-style: normal;
+			font-weight: 700;
+			font-size: 24px;
+			line-height: 160%;
+			color: #303030;
+			margin-left: 2em;
+		}
+
+		img {
+			width: 250px;
+			filter: drop-shadow(0px 5px 10px rgba(0, 0, 0, 0.5));
+			border-radius: 5px;
+			padding-bottom: 1em;
+			margin: 5px;
+		}
+
+		h4 {
+			font-family: 'Merriweather';
+			font-style: normal;
+			font-weight: 700;
+			font-size: 36px;
+			line-height: 160%;
+			color: #303030;
+		}
 	}
 
 	.post-snippet {
@@ -209,6 +280,7 @@
 	border: 1px solid #DDDDDD;
 	border-radius: 7px;
 	padding: 2em;
+	margin-bottom: 2em;
 
 	p {
 
