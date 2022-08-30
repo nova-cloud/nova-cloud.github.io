@@ -19,7 +19,7 @@ layout: page
 				<div class="post-content">
 					{% if page.thumbnail %}
 					<div>
-						<img src="{{ site.baseurl }}{{ page.thumbnail }}">
+						<img src="{{ site.baseurl }}{{ page.thumbnail }}" class="post-image">
 					</div>
 					{% endif %}
 
@@ -85,18 +85,25 @@ layout: page
 
 
 			<div class="row">
-				<div class="col-xs-12">
+				<div class="col-md-4">
 					<h5>Suscribirse a nuestro boletín</h5>
 					{% include sib-form.html %}
 				</div>
-				<div class="col-xs-12">
+				<div class="col-md-4">
 					<div class="list-group">
-						<h5>Últimos artículos</h5>
+						<h5>Artículos Populares</h5>
 
 						{% for post in site.posts limit:5 %}
 						<a href="{{ post.url }}" class="list-group-item">{{ post.title }}</a>
 						{% endfor %}
 					</div>
+				</div>
+				<div class="col-md-4">
+						<h5>Últimos artículos</h5>
+
+						{% for post in site.posts limit:5 %}
+						<a href="{{ post.url }}" class="list-group-item">{{ post.title }}</a>
+						{% endfor %}
 				</div>
 			</div>
 
