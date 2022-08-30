@@ -4,10 +4,11 @@
 	<span class="blog-filter">
 
 		{% for category in include.post.categories %}
-		<a href="{{ site.baseurl }}/{{ category | slugify }}/">{{ category | capitalize }}</a>
+		<a href="{{ site.baseurl }}/{{ category | slugify }}/">{{ category | replace: "-", " " | capitalize }}</a>
 
 		{% for tag in include.post.tags %}
-		<a href="{{ site.baseurl }}/{{ category | slugify }}/{{ tag | slugify }}/">{{ tag | capitalize }}</a>
+		<a href="{{ site.baseurl }}/{{ category | slugify }}/{{ tag | slugify }}/">{{ tag | replace: "-", " " |
+			capitalize }}</a>
 	</span>
 	{% endfor %}
 	{% endfor %}
