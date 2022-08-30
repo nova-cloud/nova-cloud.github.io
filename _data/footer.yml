@@ -1,25 +1,12 @@
 - links:
-  - name: Login
-    link: /
-    new_window: true
-  - name: Sign Up
-    link: /
-    new_window: true
-  - name: Docs
-    link: /
-    new_window: true
-  - name: Status
-    link: /
-    new_window: true
-- links:
   - name: Inicio
     link: /
   - name: Sobre Nosotros
-    link: /about/
+    link: /sobre-nosotros/
   - name: Blog
     link: /blog/
   - name: Contáctenos
-    link: /contact/
+    link: /contacto/
 - links:
   - name: Facebook
     link: https://www.facebook.com/NovaCloudBusiness

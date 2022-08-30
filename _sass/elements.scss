@@ -207,7 +207,7 @@ p, address {
 }
 
 .bg-culture {
-  background-color: #171818;
+  background-color: #7D90A3;
   padding: 50px 0;
 }
 
@@ -311,6 +311,7 @@ p, address {
     perspective: 1000px;
     margin-bottom: 40px;
     margin-top: 60px;
+    padding: 0 10px;
   }
   .flip-card-inner {
     position: relative;
@@ -339,6 +340,7 @@ p, address {
   .flip-card-front h3 {
     color: #124D99;
     text-transform: uppercase;
+    font-size: 22px;
   }
   .flip-card-back {
     background-color: #43B4F6;
@@ -410,7 +412,7 @@ p, address {
     color: white;
     padding: 24px;
     text-align: start;
-    font-size: 20px;
+    font-size: 22px;
   }
 .flip-card-back p.diversity-text {
     padding-top: 16px;
@@ -428,7 +430,7 @@ p, address {
   }
   .content-flip img {
     margin-right: 0;
-    margin-left: 195px;
+    margin-left: 230px;
   }
 }
 .content-flip img {
@@ -437,4 +439,17 @@ p, address {
 .text-white{
 	color:#fff;
 }
+/*Sobre Nosotros*/
 
+.aboutus-section p{
+    font-size: 20px;
+    text-align: start;
+}
+.aboutus-title h3{
+    padding: 20px 0;
+    text-align: center;
+    border-block-color: #4064d7;
+    border-width: 5px;
+    border-bottom: dotted;
+    font-weight: bold;
+}

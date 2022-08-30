@@ -1,18 +1,57 @@
 ---
 layout: default
 ---
-<div class="content">
-    <section class="page">
-        <div class="container {% if page.full_width %}max-container{% endif %}">
-            {% if page.heading %}
-            <h2>{{ page.heading }}</h2>
-            {% elsif page.title and page.layout != 'archive' %}
-            <h2>{{ page.title }}</h2>
-            {% endif %}
-            {% if page.description %}
-            <p class="subtext">{{ page.description }}</p>
-            {% endif %}
-            {{ content }}
+
+<div class="landing-page-content" style="background-image: url('{{ site.baseurl }}{{ page.background-image }}'); background-repeat: no-repeat; background-attachment: fixed;
+  background-size: cover;">
+
+
+    <div class="container {% if page.full_width %}max-container{% endif %}">
+        <div class="row">
+
+
+            <div class="col-lg-2 justify-content-xs-left">
+                <div class="image">
+                    <img class="img-thumbnail" src="{{ site.baseurl }}{{ page.thumbnail }}" alt="">
+                </div>
+            </div>
+            <div class="col-lg-8 align-self-left">
+                {% if page.heading %}
+                <h1>{{ page.heading }}</h1>
+
+                {% elsif page.title and page.layout != 'archive' %}
+                <h1>{{ page.title }}</h1>
+                {% endif %}
+
+                {% if page.description %}
+                <p class="services service-block">{{ page.description }}</p>
+                {% endif %}
+            </div>
+
+
+
+
+            <div class="row feature">
+                <div class="col-sm-6">
+                    <div class="feature-content">
+                        {{ content }}
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        {{ page.form }}
+                    </div>
+                </div>
+            </div>
         </div>
-    </section>
+
+
+
+
+
+    </div>
+
+
+
+</div>
 </div>

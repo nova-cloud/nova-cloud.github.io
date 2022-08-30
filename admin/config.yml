@@ -34,12 +34,28 @@ collections:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "date" }
       - {
+          label: "Categories",
+          name: "categories",
+          widget: "select",
+          options: ["", "azure", "microsoft-365"],
+          multiple: true,
+        }
+      - {
+          label: "Tags",
+          name: "tags",
+          widget: "select",
+          options: ["", "noticias", "primeros-pasos", "intermedio", "avanzado"],
+          multiple: false,
+        }
+      - { label: "Author (short name)", name: "author", widget: "string" }
+      - {
           label: "Featured Image",
           name: "thumbnail",
           widget: "image",
-          required: false,
+          required: true,
         }
-      - { label: Categories, name: categories, widget: list }
+      - { label: "Snippet", name: "snippet", widget: "string" }
+
       - { label: "Body", name: "body", widget: "markdown" }
 
   - name: "pages"
@@ -69,6 +85,18 @@ collections:
           label: "Featured Image",
           name: "thumbnail",
           widget: "image",
+          required: false,
+        }
+      - {
+          label: "Background Image",
+          name: "background-image",
+          widget: "image",
+          required: false,
+        }
+      - {
+          label: "Contact Form (iframe)",
+          name: "form",
+          widget: "text",
           required: false,
         }
       - { label: "Body", name: "body", widget: "markdown" }

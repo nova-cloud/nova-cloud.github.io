@@ -6,11 +6,18 @@
   link: /azure/
   new_window: false
   highlight: false
+  submenu:
+    - name: Comenzando con Azure
+      link: /azure/primeros-pasos/
 - name: Microsoft 365
   link: /microsoft-365/
   new_window: false
   highlight: false
-- name: Noticias
+  submenu:
+    - name: Comenzando con Microsoft 365
+      link: /microsoft-365/primeros-pasos/
+      highlight: true
+- name: Blog
   link: /blog/
   new_window: false
   highlight: false
