@@ -86,11 +86,11 @@ layout: page
 
 
 			<div class="row">
-				<div class="col-md-4">
-					<h5>Suscribirse a nuestro boletín</h5>
+				<div class="col-md-6">
+					<h4>Suscribirse a nuestro boletín</h4>
 					{% include sib-form.html %}
 				</div>
-				<div class="col-md-4">
+				<div class="col-md-3">
 					<div class="list-group">
 						<h5>Artículos Populares</h5>
 
@@ -99,7 +99,7 @@ layout: page
 						{% endfor %}
 					</div>
 				</div>
-				<div class="col-md-4">
+				<div class="col-md-3">
 					<h5>Últimos artículos</h5>
 
 					{% for post in site.posts limit:5 %}
