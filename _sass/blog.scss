@@ -365,8 +365,10 @@
 .include-relatedposts{
 	ul{
 		list-style:none;
+		width: 100%;
+    		display: flex;
 		li{
-			display:flex;
+			display:inline-block;
 		}
 	}
 }
