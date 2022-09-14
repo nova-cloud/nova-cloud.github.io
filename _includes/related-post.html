@@ -1,7 +1,9 @@
-<p>
-    <a href="{{ post.url | relative_url }}">
-        <img src="{{ post.thumbnail }}">
+<div class="col-md-6">
+    <img src="{{ post.thumbnail }}">
+</div>    
+<div class="col-md-6">
+        <a href="{{ post.url | relative_url }}">
         {{ post.title }}
-    </a><br />
-    {{ post.snippet }}
-</p>
+        </a>
+    <p>{{ post.snippet }}</p>
+</div>
