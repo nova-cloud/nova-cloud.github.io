@@ -362,4 +362,11 @@
 
 	}
 }
-
+.include-relatedposts{
+	ul{
+		list-style:none;
+		li{
+			display:flex;
+		}
+	}
+}
