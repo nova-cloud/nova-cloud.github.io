@@ -19,6 +19,6 @@ Labuda. «Con Azure puedo iniciar sesión desde cualquier lugar. Uso un equipo d
 
 Tome medidas para proteger su negocio del tiempo perdido por falta de acceso a sus datos e información crítica y [contáctenos ](https://novacloud.business/contacto)para ayudarle a implementar un Plan de protección y recuperación de datos más idóneo con Azure.
 
-[![image alt text](image URL link)](anchor link)
+
 
 [![jj](/images/uploads/ebook-azure-novacloud-1024x215.png)](google.com)
