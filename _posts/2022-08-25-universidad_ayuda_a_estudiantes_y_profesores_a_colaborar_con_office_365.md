@@ -7,6 +7,7 @@ categories:
   - noticias
 tags: primeros-pasos
 author: daniel
+thumbnail: images/uploads/office-365-estudiantes.jpg
 ---
 El colegio universitario de la ciudad de Westminster utiliza la tecnología para garantizar que todos los estudiantes tengan las habilidades que necesitan para tener éxito en la escuela y en futuros trabajos. La institución implementó Microsoft Office 365 para ayudar a los alumnos a trabajar juntos e interactuar con los profesores de una manera cómoda y en tiempo real.
 
