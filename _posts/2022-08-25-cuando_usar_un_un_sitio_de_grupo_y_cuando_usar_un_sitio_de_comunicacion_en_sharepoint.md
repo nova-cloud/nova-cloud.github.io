@@ -7,7 +7,7 @@ categories:
   - microsoft-365
 tags: primeros-pasos
 author: daniel
-thumbnail: https://th.bing.com/th/id/R.ccb26c6a7bb11ed49236d33085fcb8fa?rik=VkPkDH%2fMYFu9qA&pid=ImgRaw&r=0
+thumbnail: /images/uploads/SharePoint-Online-Reporting-dashboard.png
 ---
 Su sitio de grupo de SharePoint le permite compartir contenido,
 conocimiento, noticias y aplicaciones con su grupo como colaborar en un proyecto.
